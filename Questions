@@ -1,4 +1,5 @@
-//LOOPS
+        ==> [LOOPS PROBLEMS]
+
 //(1)print 1 to 1000.
 #include<stdio.h>
 //int main()
