@@ -92,6 +92,159 @@ puts()-->for output
  
 POINTER-->pointer is a variable that can able to hold adress of another variable.
 
+15) FUNCTION==>it is the block of code which takes input from the user and do some specific calculations and gives output.
+
+    1)no argument and  no return value.
+    2)no argument and  return value.
+    3)argument    and  no return value.
+    4)argument    and  return value.
+
+
+ // functions:-)
+      //[ no argument no return value.]
+
+    /*  void sum(); // function declearation.
+       void main()
+      {
+       sum();// function calling
+
+      }
+      void sum() //function defination.
+      {
+        int a,b,c;
+        printf("enter the number= ");
+        scanf("%d%d",&a,&b);
+        c=a+b;
+        printf("%d",c);
+
+
+      }*/
+
+
+
+      /*
+      // [no argument no return value.]
+
+
+      void table(); //function decleartion.
+      int main()
+      {
+
+         table(); //function calling.
+
+
+      }
+      table() //function calling.define.
+          int s,i,n;
+          printf("enter the number= ");
+          scanf("%d",&n); // n=9
+         for(i=1;i<=10;i++)
+         {
+            s=n*i;
+            printf("%d\n",s);
+         }
+
+
+      }*/
+
+
+
+       //[no argument return value.]
+
+      /* int sum(); // function declearation.
+       void main()
+      {
+          int s;
+       s=sum();// function calling.
+       printf("%d",s);
+
+      }
+      int sum() //function define.
+      {
+        int a,b,c;
+        printf("enter the number= ");
+        scanf("%d%d",&a,&b);
+        c=a+b;
+        return c;
+      }*/
+
+
+
+      //[no argument return value.]
+
+
+      /* int table(); //function decleartion.
+      void main()
+      {
+          int m,i,s;
+         m=table();  //function calling. //n=3
+
+          for(i=1;i<=9;i++)
+          {
+
+         s=m*i;
+         printf("%d\n",s);
+
+          }
+
+
+      }
+      int table() // function define.
+      {
+         int s,n,i;
+         printf("enter any number=  ");
+         scanf("%d",&n);
+
+         {
+           return n; //3
+         }
+
+      }*/
+    //[arugument and no return value.]
+
+
+   /*void sum(int m,int n); //function declare.
+   void main()
+    {
+     int m,n;
+     sum(m,n); // function calling.
+    }
+    void sum(int m,int n) //function define.
+    {
+     int a,b,c;
+     printf("enter the value= ");
+     scanf("%d%d",&a,&b);
+     c=a+b;
+     printf("%d",c);
+    }
+    */
+
+
+
+    //[arugument and return value.]
+
+
+   int sum(int m,int n); //function declare.
+   void main()
+    {
+     int m,n,x;
+     x=sum(m,n); // function calling.
+     printf(" addition= %d",x);
+    }
+     int  sum(int m,int n) //function define.
+    {
+     int a,b,c;
+     printf("enter the value= ");
+     scanf("%d%d",&a,&b);
+     c=a+b;
+    return c;
+
+    }
+
+16) ACTUAL PARAMETER AND FORMAL PARAMETER.==> ACTUAL PARAMTER MEANS VALUE OF THE PARAMETER  PASSES DURING CALLING THE FUNCTIONS AND FORMAL PARAMETER MEANS WHAT TYPPE OF VARIABLE PARAMTER  DURING DECLARE OF THE FUNCTION.
+     [IF I CHANGE IN THE FORMAL PARAMETR ARGUMENT  ANY THING THEN THEY WOULD NOT AFFECT ON ACTUAL ARGUMENT VICE VERSA .]
+ 
+
 
     
 
