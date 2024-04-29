@@ -263,6 +263,13 @@ POINTER-->pointer is a variable that can able to hold adress of another variable
                          3)its requires less memory.
                          4) it is more  efficient.
 
+20)Printf it is a inbuilt library function which is declared in studio dots header file.
+--1)The printer function is used to print any type of message and values on the console.
+--2)We use print app function with format specifier lights % d % C  %s %f.
+--3)We can also use a escapes sequence in printer function \n,\t.
+--4)\t ==> space between value when you  print .
+
+
                          
 
 
