@@ -1,5 +1,4 @@
-        ==> [LOOPS PROBLEMS]
-
+//LOOPS
 //(1)print 1 to 1000.
 #include<stdio.h>
 //int main()
@@ -268,3 +267,564 @@
          }
 
        }*/
+      // (11)-calculate average and total marks of 5 subjects.
+       /*int main()
+       {
+          int a[5],avg,tmarks,i,p,c,m,h,e;
+          printf("enter your marks= ");
+          for(i=1;i<6;i++)
+          {
+              scanf("%d",&a[i]);
+          }
+          avg=(p+c+m+h+e)/5;
+          tmarks=p+c+m+h+e;
+          printf("%d%d",avg,tmarks);
+
+
+       }*/
+        //(12)-->check wheather the given number is odd or even.
+       /*int main()
+       {
+         int i,j,n;
+         printf("enter the number= ");
+         scanf("%d",&n);
+          if(n%2==0)
+         {
+             printf("even number");
+         }
+         else
+            printf("odd number");
+
+       }*/
+       //(13)-->check wheather the gicen year is leap year or not.
+      /* int main()
+       {
+           int n;
+           printf("enter any year= ");
+           scanf("%d",&n);
+         if(n%4==0 || n%100==0)
+         {
+             printf("leap year");
+         }
+         else
+            printf(" not leap year");
+
+
+       }*/
+
+       //(14)-->(check wheather the given nuumber is odd or not).
+     /*  int main()
+       {
+         int x;
+         printf("enter the any number= ");
+         scanf("%d",&x);
+         if(x==2 || x%2!=0)
+         {
+             printf("prime number");
+         }
+         else
+            printf("not prime number");
+
+       }*/
+
+
+      /*
+       // c program to reverse a number only for 2 number.
+       int main()
+       {
+           int s,n,p,x;
+         //32-->23
+         printf("enter the number");
+         scanf("%d",&n);//32
+         s=n;
+         x=s%10;//rem=2
+         p=s/10;//quotient=3
+         printf("%d%d",x,p);
+
+       }*/
+
+     /*  int main()
+      {
+    //input 123-->1+2+3=6.
+
+
+       //132-->1+3+2=6
+         int n,r,sum=0;
+         printf("enter any number= ");
+         scanf("%d",&n);
+         while(n>0)
+{
+
+         r=n%10;
+         sum=sum+r;
+         n=n/10;
+
+}
+
+
+
+
+      printf("%d",sum);
+      }*/
+
+      // functions:-)
+      // no argument no return value.
+    /*  void sum(); // function declearation.
+       void main()
+      {
+       sum();// function calling
+
+      }
+      void sum() //function defination.
+      {
+        int a,b,c;
+        printf("enter the number= ");
+        scanf("%d%d",&a,&b);
+        c=a+b;
+        printf("%d",c);
+
+
+      }*/
+
+      /*
+      // no argument no return value.
+      void table(); //function decleartion.
+      int main()
+      {
+
+         table(); //function calling.
+
+
+      }
+      table() //function calling.define.
+          int s,i,n;
+          printf("enter the number= ");
+          scanf("%d",&n); // n=9
+         for(i=1;i<=10;i++)
+         {
+            s=n*i;
+            printf("%d\n",s);
+         }
+
+
+      }*/
+
+       //no argument return value.
+
+      /* int sum(); // function declearation.
+       void main()
+      {
+          int s;
+       s=sum();// function calling.
+       printf("%d",s);
+
+      }
+      int sum() //function define.
+      {
+        int a,b,c;
+        printf("enter the number= ");
+        scanf("%d%d",&a,&b);
+        c=a+b;
+        return c;
+      }*/
+
+      //no argument return value.
+      /* int table(); //function decleartion.
+      void main()
+      {
+          int m,i,s;
+         m=table();  //function calling. //n=3
+
+          for(i=1;i<=9;i++)
+          {
+
+         s=m*i;
+         printf("%d\n",s);
+
+          }
+
+
+      }
+      int table() // function define.
+      {
+         int s,n,i;
+         printf("enter any number=  ");
+         scanf("%d",&n);
+
+         {
+           return n; //3
+         }
+
+      }*/
+    //arugument and no return value.
+   /*void sum(int m,int n); //function declare.
+   void main()
+    {
+     int m,n;
+     sum(m,n); // function calling.
+    }
+    void sum(int m,int n) //function define.
+    {
+     int a,b,c;
+     printf("enter the value= ");
+     scanf("%d%d",&a,&b);
+     c=a+b;
+     printf("%d",c);
+    }
+    */
+
+    //arugument and return value.
+ /*int sum(int m,int n); //function declare.
+   void main()
+    {
+     int m,n,x;
+     x=sum(m,n); // function calling.
+     printf(" addition= %d",x);
+    }
+ int  sum(int m,int n) //function define.
+    {
+     int a,b,c;
+     printf("enter the value= ");
+     scanf("%d%d",&a,&b);
+     c=a+b;
+    return c;
+
+    }*/
+    // argument and no return value.
+     // write a program to swap the two number.
+    /* void swap(int a, int b); //function declare.
+     void main()
+     {
+         int a,b;
+       printf("enter the two number= ");
+       scanf("%d%d",&a,&b);
+       swap(a,b); //function calling.
+     }
+    swap(int a,int b) // function define.
+    {
+      int c;
+      c=a;
+      a=b;
+      b=c;
+      printf("the value of a and b respectively is = %d %d",a,b);
+
+    }*/
+    //c program to print array element.
+
+    /*int main()
+    {
+      int a[5],i,j;
+      printf("enter the elements= ");
+      for(i=1;i<=5;i++)
+      {
+        scanf("%d",&a[i]);
+      }
+      printf("the elements are= ");
+      for(i=1;i<=5;i++)
+      {
+        printf("%d\n",a[i]);
+      }
+
+
+    }*/
+
+    // calculate sum of array elements.
+    /*int main()
+  {
+      int sum=0,a[5],i;
+      printf("enter the elements= ");
+      for(i=1;i<=5;i++)
+      {
+       scanf("%d",&a[i]);
+      }
+      for(i=1;i<=5;i++)
+      {
+        printf("%d",a[i]);
+        sum=sum+a[i];
+      }
+    printf("%d", sum);
+    }*/
+    //c program to reverse array elements.
+   /* int main()
+    {
+        // input=1 2 3 4 5.
+        // output=5 4 3 2 1.
+     int a[5],i,j,c;
+     printf("enter the elements= ");
+     for(i=0;i<5;i++)
+     {
+    scanf("%d",&a[i]);
+     }
+     for(i=0;i<5;i++)
+     {
+      for(j=0;j<5;j++)
+      {
+
+       if(a[j]<a[j+1]) //swap
+     {
+         c=a[j+1];
+         a[j+1]=a[j];
+         a[j]=c;
+     }
+      }
+
+      }
+     for(i=0;i<5;i++)
+     {
+       printf("%d",a[i]);
+     }
+    }
+*/
+
+    // c program to find maximum and minimum elements of array.
+    // input=5,9,2,4,8 ==> max=9 ,min=2
+   /*int main()
+    {
+        // input=1 2 3 4 5.
+        // output=5 4 3 2 1.
+     int a[5],i,j,c,n;
+     printf("enter the size of the array(n)= ");
+
+      scanf("%d",&n);
+
+
+     printf("enter the elements= ");
+     for(i=0;i<=n;i++)
+     {
+    scanf("%d",&a[i]);
+     }
+     for(i=0;i<=n;i++)
+     {
+      for(j=0;j<=n;j++)
+      {
+
+       if(a[j]<a[j+1]) //swap
+     {
+         c=a[j+1];
+         a[j+1]=a[j];
+         a[j]=c;
+     }
+      }
+
+     }
+
+
+
+
+  for(i=0;i<=n;i++)
+     {
+       printf("%d",a[i]);
+     }
+
+
+          for(i=0;i<=n;i++)
+          {
+            if(i==n) // 7==7
+            {
+              printf("minimum value= %d",a[i]);
+              break;
+
+            }
+
+          }
+     printf("\nmaximum value = %d",a[0]);
+
+    }
+    */
+    // program in call by value functions.
+   /*swap(int a,int b);// function declared.
+   int main()
+   {
+       int x;
+       int y;
+     printf("enter the value of x= ");
+     scanf("%d",&x);
+     printf("enter the value of y= ");
+        scanf("%d",&y);
+     swap(x,y); //function calling. ==>passes the value==>actual parameter.
+        // actual parameter cant be changed during run time they wont affect by formal paramter.
+        // argument is actual value passes
+   }
+   swap(int a,int b) //function define.==>formal paramter-->parameter means passes the value .
+  {
+      int c;
+    c=a;
+    a=b;
+    b=c;
+    printf("%d%d",a,b);
+
+  }*/
+  // call by value function.// parameter may same or not be same.
+ // sum of two  number.
+ /*void sum(int a,int b);//function declared.
+ void main()
+ {
+     int a,b;
+     printf("enter the value of a= ");
+     scanf("%d",&a);
+      printf("enter the value of b= ");
+     scanf("%d",&b);
+    sum(a,b);  //function calling.
+
+ }
+ void sum(int a ,int b)  //function define.
+
+ {
+   int c;
+   c=a+b;
+   printf("sum= %d",c);
+
+ }*/
+
+ //call by address function. passes the adress of the value.// parameter must be same.
+ /*void swap(int *a,int *b);
+ void main()
+ {
+    int a,b;
+    printf("enter the value of a= ");
+     scanf("%d",&a);
+    printf("enter the value of b= ");
+     scanf("%d",&b);
+     swap(&a,&b);
+ }
+ void swap(int *a,int *b) //fucntion define.
+ {
+   int c;
+   c=*a;
+  *a=*b;
+  *b=c;
+  printf("the value of and b are respectively= %d%d",*a,*b);
+
+
+ }*/
+ // call by reference.-->passes the address of the value .=>paramter same or not be same.
+ /*void swap(int *a,int *b);
+ void main()
+ {
+     int a=10,b=20;
+     swap(&a,&b);
+     printf(" the value of a and b= %d%d",a,b);
+ }
+  void swap(int *a,int *b)
+  {
+    int c;
+    c=*a;
+    *a=*b;
+    *b=c;
+    printf(" the value of a and b= %d%d\n",*a,*b);
+  }*/
+/*  void sum(int *p,int *q);//function define.
+  int main()
+  {
+      int a,b;
+   printf("enter the value of a =");
+   scanf("%d",&a);
+   printf("enter the value of b =");
+    scanf("%d",&b);
+
+    sum(&a,&b); //function calling.
+  }
+  void sum(int *p,int *q) //function define.
+{
+  int c;
+  c=*p+*q;
+  printf("%d",c);
+
+}
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
