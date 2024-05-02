@@ -585,7 +585,12 @@
      int a[5],i,j,c,n;
      printf("enter the size of the array(n)= ");
 
+
+
       scanf("%d",&n);
+
+
+
 
 
      printf("enter the elements= ");
@@ -730,24 +735,491 @@
   c=*p+*q;
   printf("%d",c);
 
+}*/
+
+// program on sum of natural number using recursion.
+/*int sum(int n);//function declared.
+ void main()
+{
+    int f1,n;
+    printf("enter the number of terms= ");// n=5-->1+2+3+4+5=15=f1
+    scanf("%d",&n);//n=5
+    f1=sum(n);//function calling.
+    printf("the sum of n term is = %d",f1);
 }
-/*
+int sum(int n)//function define.
+{
+  if(n==1)
+    return 1;
+
+  else
+    return n+sum(n-1);
+
+
+
+}*/
+// program on sum of even number using recursion.
+/*int sonu(int n);//function declared.
+   void  main()
+
+{
+    int f1,n;
+    printf("enter the nth term of even number = ");
+    scanf("%d",&n);
+    f1=sonu(n);//function calling.
+    printf("%d",f1);
+}
+int  sonu(int n)//function define.
+{
+  if(n==1)
+  return 2;
+
+  else
+  return 2*n+sonu(n-1);
+
+}
+*/
+
+/*int main()
+{
+   char str1[100];//  string is that collection of character.
+    puts("enter the string= ");
+    gets(str1);
+    puts(str1);
+
+}*/
+// program on pointer.
+/*int main()
+{
+    int a=10,*ptr;
+    ptr=&a;
+    printf("%d\n",ptr);
+    printf("%d",*ptr);
+}*/
+// write a program on adding two number using pointer.
+/*int main()
+{
+  int *p,*p2,*sum,a,b;
+  printf("enter the two number= ");
+  scanf("%d%d",&a,&b);
+  p=&a;//it holds the address of a.
+  p2=&b;//it holds the address of b.
+  sum=*p+*p2;
+  printf("%d",sum);
+}*/
+//c program to swap two number using pointer.
+/*int main()
+{
+  int *p,*q,*c,a,b;
+  p=&a;
+  q=&b;
+  printf("enter the value of a= ");
+  scanf("%d",&a);
+  printf("enter the value of b= ");
+  scanf("%d",&b);
+  c=*p;
+  *p=*q;
+  *q=c;
+  printf("the value of and b are= %d%d",a,b);
+
+}*/
+// write a program on which is greater number.
+
+/*int main()
+{
+   int *p,*q,a,b,i;
+   p=&a;
+   q=&b;
+   printf("enter the value of a and b= ");
+   scanf("%d%d",&a,&b);
+   if(*p>*q)
+   {
+       printf("a is greater");
+   }
+   else
+    printf("b is greater");
+
+
+
+}*/
+// void pointer.-->type casting krna padhta hai.
+ /*void main()
+{
+   void *p;
+   int a=10;
+   p=&a;
+   printf("%d",*(int *)p);
+
+}*/
+// union,structure,storage class,strings functions tomorrow.
+
+//searching ==>linear search and Binary search.==>array should be in shorted manner.
+/*int main()
+{
+  int a[5],i,j,n;
+  printf("enter the array elements= ");
+  for(i=1;i<=5;i++)
+  {
+        scanf("%d",&a[i]);
+
+  }
+printf("enter the searching elements= ");
+  scanf("%d",&n);
+  for(i=1;i<=5;i++)
+  {
+
+    if(a[i]==n)//n=9
+    {
+        printf("elements is found");
+    }
+    else if(a[i]!=n)
+    {
+        continue;
+    }
+
+    else
+        printf("elements not found");
+  }
+  if(i==6)
+  {
+      printf("elements is not found");
+  }
+
+}*/
+// binary searching.
+/*int main()
+{
+  int a[5],i,j,n,mid=6,low=1,high=5;
+  printf("enter the array elements= ");
+  for(i=1;i<=5;i++)
+  {
+   scanf("%d",&a[i]);
+  }
+  printf("enter the searching elements= ");
+  scanf("%d",&n);//n=searching elements.
+  while(low<=high)
+  {
+    if(a[mid]==n)
+    {
+     printf("elements is found");
+     break;
+    }
+    else if(n>a[mid]) //2>3
+    {
+       low=mid+1;
+    }
+    else
+       high=mid-1;
+  }
+
+     if(low>=high)
+ {
+     printf("Elements is not found");
+ }
+
+
+}*/
+
+//sorting.
+
+ /*int main()
+    {
+         // input=1 2 3 4 5.
+        // output=5 4 3 2 1.
+     int a[5],i,j,c,n;
+     printf("enter the size of the array(n)= ");
+
+
+      scanf("%d",&n);
+
+
+     printf("enter the elements= ");
+     for(i=0;i<=n-1;i++)
+     {
+    scanf("%d",&a[i]);
+     }
+     for(i=0;i<=n-1;i++)
+     {
+      for(j=0;j<=n-1;j++)
+      {
+
+       if(a[j]<a[j+1]) //swap
+     {
+         c=a[j+1];
+         a[j+1]=a[j];
+         a[j]=c;
+     }
+      }
+     }
+  for(i=0;i<=n-1;i++)
+     {
+       printf(" %d ",a[i]);
+     }
+
+
+          for(i=0;i<=n-1;i++)
+          {
+            if(i==n-1) // 7==7
+            {
+              printf("minimum value= %d",a[i]);
+              break;
+
+            }
+
+          }
+     printf("\nmaximum value = %d",a[0]);
+    }*/
+
+    //program on sqauare -->constant time complexity.
+  /* int square(int n);//function declared.
+    void main()
+
+    {
+        int n,a;
+        printf("enter the number= ");
+        scanf("%d",&n);
+       a=square(n);//function calling.
+       printf("%d\n",a);
+       printf("%d bytes\n",sizeof(n));
+    }
+    int square(int n)//function define.
+{
+   return n*n;
+
+}*/
+// linear search using for loop.
+
+/*int main()
+{
+    int a[5],i,n;
+    printf("enter the array elements= ");
+    for(i=1;i<=5;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    printf("enter the searching elements of  array= ");
+    scanf("%d",&n);//n=5
+    for(i=0;i<5;i++)
+{
+    if(a[i]==n) //n=5
+    {
+        printf("elements is found");
+        break;
+    }
+
+}
+ if(i==5)
+    {
+        printf("elements is not found");
+    }
+}*/
+
+//binary search.
+  /*int main()
+  {
+
+  int a[5],i,j,n,mid=6,low=1,high=5;
+  printf("enter the array elements= ");
+  for(i=1;i<=5;i++)
+  {
+   scanf("%d",&a[i]);
+  }
+  printf("enter the searching elements= ");
+  scanf("%d",&n);//n=searching elements.
+      while(low<high)
+     if(a[mid]==n)
+    {
+     printf("elements is found");
+     break;
+    }
+    else if(n>a[mid]) //2>3
+    {
+       low=mid+1;
+    }
+    else
+       high=mid-1;
+
+
+     if(low>=high)
+ {
+     printf("Elements is not found");
+ }
+ }*/
+
+//Bubble Sorting.
+/* int main()
+    {
+         // input=1 2 3 4 5.
+        // output=5 4 3 2 1.
+     int a[5],i,j,c,n;
+     printf("enter the size of the array(n)= ");
+
+
+      scanf("%d",&n);
+
+
+     printf("enter the elements= ");
+     for(i=0;i<=n-1;i++)
+     {
+    scanf("%d",&a[i]);
+     }
+     for(i=0;i<=n-1;i++)
+     {
+      for(j=0;j<=n-1;j++)
+      {
+
+       if(a[j]<a[j+1]) //swap
+     {
+         c=a[j+1];
+         a[j+1]=a[j];
+         a[j]=c;
+     }
+      }
+     }
+  for(i=0;i<=n-1;i++)
+     {
+       printf(" %d ",a[i]);
+     }
+
+
+          for(i=0;i<=n-1;i++)
+          {
+            if(i==n-1) // 7==7
+            {
+              printf("minimum value= %d",a[i]);
+              break;
+
+            }
+
+          }
+     printf("\nmaximum value = %d",a[0]);
+    }*/
+    // Selection Sorting.
+   /* int main()
+    {
+       int a[5],i,j,c,n;
+     printf("enter the size of the array(n)= ");
+
+
+      scanf("%d",&n);
+
+
+     printf("enter the elements= ");
+     for(i=0;i<=n-1;i++)
+     {
+    scanf("%d",&a[i]);
+     }
+     for(i=0;i<=n-1;i++)
+     {
+      for(j=0;j<=n-1;j++)
+      {
+
+       if(a[j]<a[j+1]) //swap
+     {
+         c=a[j+1];
+         a[j+1]=a[j];
+         a[j]=c;
+     }
+      }
+     }
+  for(i=0;i<=n-1;i++)
+     {
+       printf(" %d ",a[i]);
+     }
+
+
+          for(i=0;i<=n-1;i++)
+          {
+            if(i==n-1) // 7==7
+            {
+              printf("minimum value= %d",a[i]);
+              break;
+
+            }
+
+          }
+     printf("\nmaximum value = %d",a[0]);
+    }*/
+
+    //Insertion Sorting.
+    // 6,5,4,2,3;
+    /*int main()
+    {
+      int a[5],i,j,n,c;
+      printf("enter the elements= ");
+        for(i=0;i<5;i++)
+        {
+      scanf("%d",&a[i]);
+        }
+       for(i=0;i<=5;i++)
+
+       {
+           for(j=0;j<i+1;j++)
+           {
+               if(a[j]>a[j+1])
+               {
+                  c=a[j];
+                  a[j]=a[j+1];
+                  a[j+1]=c;
+               }
+
+           }
+       }
+       for(i=0;i<5;i++)
+       printf(" %d ",a[i]);
+
+    }*/
+
+    // Merge Sorting.
+
+ int main()
+    {
+      int a[8],i,j,n,c,c1,c2;
+      printf("enter the elements= ");
+        for(i=0;i<8;i++)
+        {
+      scanf("%d",&a[i]);//36,15,11,12,30,45,50,20.
+        }
+        for(i=0;i<;i++)
+        {
+            for(j=0;j<=i;j++)
+            {
+              if(a[2*i]>a[2*i+1])
+              {
+                  c=a[2*i];
+                  a[2*i]=a[2*i+1];
+                  a[2*i+1]=c;
+              }
+            }
+        }
+
+
+                for(j=0;j<=1;j++)
+                {
+                  c1=a[j];
+                  a[j]=a[j+2];
+                  a[j+2]=c1;
+                }
+                for(i=4;i<=5;i++)
+                {
+                    c2=a[i];
+                    a[i]=a[i+2];
+                    a[i+2]=c2;
+                }
+                for(i=0;i<8;i++)
+                {
+                    printf(" %d ",a[i]);
+                }
 
 
 
 
 
+               // 11,12,15,36,20,30,45,60.
 
 
 
-
-
-
-
-
-
-
-
+        }
 
 
 
