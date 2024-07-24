@@ -25,3 +25,344 @@ int main()
    
     
 }
+
+
+
+
+
+// USING nCr PROBLEMS.
+#include<stdio.h>
+int main()
+{
+    int a[20],i=1,j,k,x,n,c=1;
+    printf("enter the numbers= ");
+    {
+        scanf("%d",&n);
+    }
+    
+   for(i=1;i<=n;i++)
+    {
+        c=c*i;
+    }
+    printf("%d",c);
+}
+
+
+
+
+
+
+
+// Intersection of two arrays.
+
+#include<stdio.h>
+int main()
+{
+    int a[29],b[20],i,j,k,x,n1,n2,c=0;
+    printf("enter the value of n1= ");
+    {
+        scanf("%d",&n1);
+    }
+    
+    printf("enter the elements of first array= ");
+    {
+        for(i=1;i<=n1;i++)
+        {
+            scanf("%d",&a[i]);
+        }
+        
+    }
+    
+    printf("enter the value of n2= ");
+    {
+        scanf("%d",&n2);
+    }
+    
+    printf("enter the elements of second array= ");
+    {
+        for(i=1;i<=n2;i++)
+        {
+          scanf("%d",&b[i]);  
+        }
+        
+    }
+    
+    for(i=1;i<=5;i++)
+    {
+        if(a[i]==b[i])
+        {
+            c=c+1;
+        }
+    }
+    printf("repeated %d time",c);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*N = 6
+Output:
+1 
+Explanation:
+Factors of 6 are 1, 2, 3 and 6.
+Excluding 6 their sum is 6 which
+is equal to N itself. So, it's a
+Perfect Number.*/
+#include<stdio.h>
+int main()
+{
+    int a[20],i,j,k,x,n,sum=0,c;
+    printf("enter the number= ");
+    scanf("%d",&n);
+    
+    for(j=1;j<=10;j++)
+    {
+      if(n%j==0)
+      {
+          for(i=j+1;i<=j+1;i++)
+          {
+              if(j==n)
+              {
+                  break;
+              }
+             printf("%d,",i);
+             a[i]=i;
+          }
+         
+         
+          
+      }
+      
+    }
+    for(i=j+1;i<=n;i++)
+    {
+        sum=sum+a[i];
+      printf("%d",a[i]); 
+      
+    }
+    printf("%d",sum);
+    c=sum;
+    if(c==n);
+    {
+        printf("perfect number");
+    }
+    
+    printf("not a perfect number");
+}
+
+ //NOT DONE
+
+
+
+
+
+
+
+
+
+
+
+// ARMSTRONG NUMBER.
+#include<stdio.h>
+int main()
+{
+    int a[20],i,r,sum=0,n,k,c=0,s,p;
+    
+    printf("enter the no.of digits= ");
+    scanf("%d",&k);//k=3
+    
+    printf("enter the number= ");
+    scanf("%d",&n);//n=153
+    p=n;
+
+for(i=1;i<=k;i++)
+{
+    r=n%10;
+    if(r==0)
+    {
+        a[i]=k;
+        break;
+    }
+    
+    a[i]=r;
+    n=n/10;
+}
+for(i=1;i<=k;i++)
+{
+    c=c+a[i]*a[i]*a[i];
+    
+
+    
+   
+}
+printf("%d",c);
+s=c;
+if(s==p)
+{
+    printf(" armstrong number");
+}
+else
+printf("not an armstrong number");
+}
+
+
+
+
+
+
+
+
+
+
+//M,N ROOT OF NUMBERS.
+
+#include<stdio.h>
+int main()
+{
+    int a[20],b[20],i,j,x,n,c=1,m,k=1;
+    printf("enter the value of m= ");
+    scanf("%d",&m);//m=9
+    
+    for(i=1;i<=m;i++)
+    {
+        if(m%i==0)
+        {
+            
+            {
+                a[k]=i;
+                k=k+1;
+            }
+        }
+    }
+    printf("the numbers");
+    for(i=1;i<=3;i++)
+    {
+        
+        printf("%d",a[i]); 
+        b[i]=a[i];
+    }
+   
+    printf("enter the value of n= ");
+    scanf("%d",&n);//n=2;
+    for(i=1;i<=9;i++)
+    {
+        if(n==2)
+        {
+           c=a[i]*a[i];   
+        }
+       else
+        c=a[i]*a[i]*a[i];
+      
+        if(m==c)
+    {
+        printf("%d",a[i]);
+        break;
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// GREATEST PRIME NUMBER.
+#include<stdio.h>
+int main()
+{
+  int a[20],i=1,j,x,n,k=1;
+  printf("enter the number= ");
+  scanf("%d",&n);//n=24
+  
+  printf("the factor of this number is= ");
+  for(i=1;i<=24;i++)
+  {
+      if(n%i==0)
+      {
+          a[k]=i;
+          printf("%d",i);
+          k=k+1;
+      }
+  }
+  while(a[i]>0)
+  {
+      if(a[i]==2)
+      
+      {
+        printf("%d",a[i]);     
+      }
+      else if(a[i]%2!=0 && a[i]%1==0)
+      {
+          printf("%d",a[i]);
+      }
+   
+  }
+  
+  
+}
+   
+   
+}    // NOT DONE
+
+
+
+
+
+
+
+
+
+
+
+//Nth Natural Number.
+
+#include<stdio.h>
+int main()
+{
+    int a[20],i,j,k,x,n;
+    printf("enter the elements= ");
+    scanf("%d",&n);//
+
+
+for(i=1;i<=n+1;i++)
+{
+   if(i==9) 
+   {
+      
+      continue;
+   } 
+   
+   printf("%d",i);
+}
+
+}
+
+
+//THE MOST CHALLANGEING QUESTION --1> FABBINACCOI SERIES
+                                   2> DOORS OPEN  >>
