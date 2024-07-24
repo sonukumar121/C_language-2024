@@ -1,1 +1,27 @@
-
+//Maximum Product Subarray
+/*Input: arr[] = {6, -3, -10, 0, 2}, n = 5
+Output: 180
+Explanation:  The subarray [6, -3, -10] gives max product as 180.*/
+#include<stdio.h>
+int main()
+{
+    int a[20],i,j,k,x,n,c=1;
+    printf("enter the elemnets= ");
+    for(i=1;i<=5;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    
+   for(i=1;i<=5;i++)
+   {
+       if(a[i]!=0)
+       {
+           c=c*a[i];
+       }
+       else
+       break;
+   }
+   printf("the max product of the subaray is= %d",c);
+   
+    
+}
