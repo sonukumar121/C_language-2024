@@ -366,3 +366,1833 @@ for(i=1;i<=n+1;i++)
 
 //THE MOST CHALLANGEING QUESTION --1> FABBINACCOI SERIES
                                    2> DOORS OPEN  >>
+
+
+
+
+
+
+
+
+
+
+GEEKS_FOR_GEEKS QUESTIONS FROM BASIC TO ADVANCED LEVEL AND AFTER THIS COMPLETION YOU HAVE TO SOLVE COMPANY LEVEL QUESTION.
+// 10-MAY-2024.==>FIRST DAY.
+
+
+
+1>
+ // MISSING  NUMBERS IN ARRAYS.
+#include<stdio.h>
+int main()
+//N = 10
+//A[] = {6,1,2,8,3,4,7,10,5}
+{
+    int i,x,a[30],n;
+    printf("enter the size of no.of elements till=\n ");
+    scanf("%d",&n);
+    printf("enter the array elements= ");
+    for(i=1;i<n;i++)
+    {
+        scanf("%d",&a[i]);  
+    }
+   
+    
+    for(x=1;x<n;x++)
+    {
+    for(i=1;i<n;i++)
+    {
+        if(x==a[i])
+        {
+            break;
+        }
+        else if(i==9)
+        {
+            printf("the missing elements is= %d",x);
+        }
+        else
+        continue;
+    }
+
+
+
+
+
+
+//REPEATING ELEMENTS.
+#include<stdio.h>
+
+int main() 
+{
+  int x,i,a[39];
+  printf("enter the array elements = ");
+  for(i=1;i<=4;i++)
+  {
+     scanf("%d",&a[i]);
+  }
+  for(x=1;x<=3;x++)
+  {
+    for(i=x;i<=3;i++)  
+    {
+      if(a[x]==a[i+1])
+      {
+          printf("the repeating  elements is =%d\n",a[x]);
+          break;
+          
+      }
+      else
+      i++;
+    }
+  }
+}
+
+
+
+
+
+
+// highest elemnts in given array.
+#include <stdio.h>
+
+int main() 
+{
+  int i,x,max,c,a[40];
+  printf("enter the array elemnsts= ");
+  for(i=1;i<=5;i++)
+  {
+     scanf("%d",&a[i]);  
+  }
+   max=a[1];
+   for(i=1;i<=5;i++)
+   {
+       if(max<a[i])
+       {
+           max=a[i];
+           c=max;
+       }
+       
+       else
+       i++;
+       
+   }
+   printf("the biggest elements is= %d",c);
+  
+}  
+
+
+
+
+
+
+// HIGHEST 1ST AND 2ND ELEMENTS IN ARRAYS.
+#include <stdio.h>
+
+int main() 
+{
+  int i,x,max,c,a[40],h,f,e;
+  printf("enter the array elemnsts= ");
+  for(i=1;i<=5;i++)
+  {
+     scanf("%d",&a[i]);  
+  }
+   max=a[1];
+   for(i=1;i<=5;i++)
+   {
+       if(max<a[i])
+       {
+           max=a[i];
+           c=max;
+       }
+       
+       else
+       i++;
+       
+   }
+   printf("the highest first  elements is= [%d]\n",c);
+   
+   
+   h=c; //h=5
+   f=a[1]; //f=1
+   for(i=1;i<=5;i++)
+   {
+  
+    if(f<a[i+1]) //
+   {
+        //f=100
+       if(f==h) //5==5
+       {
+         continue;  
+       }
+       f=a[i+1];//f=2
+       e=f; // 2
+       f=e;//2
+   }
+   
+   else
+   i++;
+   printf("the second highest elemnts is= [%d]\n",f);
+   break;
+  
+}  
+}
+
+
+
+
+
+
+ //11-MAY==>SECOND DAY.
+
+// COUNT PAIRS WITH GIVEN SUM.
+  #include <stdio.h>
+  int main()
+  {
+  int a[30],i,c=0,x,n,k;
+  
+  printf("enter the value of k= ");
+  scanf("%d",&k);
+  
+  printf("enter the value of n=  ");
+  scanf("%d",&n);//n=4.
+  
+  printf("entr the arry elements= ");
+  for(i=1;i<=n;i++)
+  {
+   scanf("%d",&a[i]);   
+  }
+  
+
+int f=0;
+for(x=1;x<=n-1;x++)
+{
+    for(i=x;i<=n-1;i++)
+    {
+      if(a[x]+a[i+1]==k)
+      {
+          f=f+1;//f=1
+         
+         
+      }
+     
+    }
+}
+  printf("sum of pairs is =%d",f);
+}
+
+
+
+
+
+
+
+// CHECK IF ARRAY IS SORTED OR NOT.
+#include<stdio.h>
+int main()
+{
+   int a[20],i,j,n;
+   
+   printf("enter the value of n= ");
+   scanf("%d",&n);
+      printf("enter the array elements= ");
+
+   for(i=1;i<=n;i++)
+   {
+    scanf("%d",&a[i]);   
+   }
+   for(i=1;i<=n-1;i++)
+   {
+       if(a[i]<a[i+1])
+       {
+           continue;
+       }
+       else
+       printf("array is not sorted\n");
+       break;
+   }
+   if(i==5)
+   {
+      printf("array is sorted ");   
+   }
+ 
+   
+   
+}
+
+
+
+
+                                        [ 13TH MAY 2024.]
+
+
+
+
+#include<stdio.h>
+//Intersection of two arrays
+
+int main()
+{
+   int a[20],b[30],i,j,n;
+   printf("enter the array elements of a= ");
+   for(i=1;i<=5;i++)
+   {
+       scanf("%d",&a[i]);//1,2,3,4,5.
+   }
+   
+   printf("enetr the array elements of b=  ");
+   for(i=1;i<=3;i++)
+   {
+       scanf("%d",&b[i]); //1,2,4.
+   }
+   
+   for(j=1;j<=3;j++)
+   {
+       for(i=j;i<=j;i++)
+       {
+           if(a[i]=a[j])
+           {
+            printf("%d",a[i]);
+               break;
+           }
+       }
+
+   }
+   
+}   // NOT DONE.
+
+
+
+
+
+
+
+
+// FIND ELEMENTS WHICH OCCUR 'K' TIMES.
+#include<stdio.h>
+int main()
+{
+    int a[33],i,j,x,c=0;
+    printf("enter the array elements= ");
+    for(i=1;i<=7;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+
+   for(x=1;x<=5;x++)
+   {
+     for(i=x+1;i<=7;i++)
+     {
+         if(a[x]==a[i])
+         {
+             c=c+1;
+            break;
+         }
+         
+         else
+         i++;
+     }
+   }
+   printf("the no.of elements repeated is = %d",c);
+}
+
+
+
+
+
+//ALL ZEROES AT THE END OF THE ARRAY ELEMENTS OR SET OF NUMBERS.
+#include<stdio.h>
+int main()
+//Move all zeroes to end of the array elements.
+{
+  int a[20],i,n,x,c;
+  printf("enter the value of n= ");
+  scanf("%d",&n);
+  
+  printf("enetr the array elements= ");
+  for(i=1;i<=n;i++)
+  {
+     scanf("%d",&a[i]); //1,2,0,0,3,4 ==>1,2,4,0,3,0
+  }
+  
+for(x=0;x<=5;x++)
+{
+  for(i=1;i<=n;i++)
+  {
+    if(a[i]==0) // a[3]==0          a[4]==0
+  {
+     c=a[i]; //c=0
+     a[i]=a[n-x];// a[3]=a[6]==>a[3]=3
+     a[n]=c;// a[6]=0
+     break;
+     
+    
+  }
+  else
+  i++;
+}
+
+}
+for(i=1;i<=6;i++)
+{
+    printf(" %d",a[i]);
+}
+} ====> NOT DONE.
+   
+
+
+
+
+
+
+
+
+////Count the Zeros.
+#include<stdio.h>
+
+int main()
+{
+    int a[30],i,n,c=0;
+   // printf("enter the value of n= ");
+   // scanf("%d",&n); //n=4
+    
+    printf("enter the array elements= ");
+    for(i=1;i<=5;i++) //n=4
+    {
+      scanf("%d",&a[i]);   //1,2,3,0.
+    }
+    
+    for(i=1;i<=5;i++) //n=4
+    {
+        if(a[i]==0)
+        {
+            c=c+1;
+           
+            
+        }
+        else
+        i++;  
+    }
+    printf("%d",c);
+    
+}
+   
+
+
+
+    
+////Find all pairs with a given sum
+#include<stdio.h>
+int main()
+{
+  int a[5],b[5],i,j,s,x;
+  //printf("enter the value of s= ");
+  //scanf("%d",&s);
+  printf("enter the elements of 1st array= ");
+  for(i=1;i<=5;i++)
+  {
+      scanf("%d",&a[i]);
+  }
+  printf("enter the elements of 2nd array= ");
+  for(i=1;i<=5;i++)
+  {
+    scanf("%d",&b[i]);   
+  }
+  
+  
+  for(x=1;x<=5;x++)
+  {
+      for(i=1;i<=5;i++)
+      {
+          if (a[x]+b[i]==9)
+         {
+              printf("(%d %d)",a[x],b[i]);
+         }
+          else
+          i++;
+      }
+      }
+  }
+        //NOT DONE
+  
+
+
+
+
+
+
+//BITONIC POINT ==>MAX VALUE.
+#include<stdio.h>
+int main()
+{
+    int a[30],i,j,max,n;
+    printf("enetr the value of n= ");
+    scanf("%d",&n);
+    printf("enter the elements= ");
+    for(i=1;i<=n;i++)
+    {
+        scanf("%d",&a[i]); 5,6,7,3,2;
+    }
+    max=a[1];
+    for(i=1;i<=n;i++)
+    {
+       if(a[i]<a[i+1]) 
+       {
+        max=a[i+1];//c=7
+       }
+       else
+       i++;
+    }
+    printf("the max value of elements is = %d",max);
+}
+//n = 9
+//arr[] = {1,15,25,45,42,21,17,12,11}
+//Output: 45
+
+    
+
+
+
+
+
+
+
+
+//// Online C compiler to run C program online
+#include <stdio.h>
+//FIND MISSING NUMBERS IN SECOND ARRAY
+int main() 
+
+{
+  int a[30],b[40],i,j,n,x;
+  printf("enter the elements of 1st array= ");
+  for(i=1;i<=6;i++)
+  {
+      scanf("%d",&a[i]); //1,2,3,4,5,10
+  }
+    printf("enter the elements of 2nd array= ");
+
+  for(i=1;i<=5;i++)
+  {
+      scanf("%d",&b[i]); //2,3,1,0,5
+  }
+  
+  for(x=1;x<=6;x++)
+  {
+      for(i=1;i<=5;i++)
+      {
+          if(a[x]==b[i])
+          {
+           break;
+          }
+         
+      
+        else if(i==5)
+         {
+             printf("missing elements  in second array is = %d\n",a[x]);
+             break;
+         }
+         
+         else
+         i++;
+         
+        }
+     
+  }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+                                                { 17th MAY 2024}
+
+
+
+//  FIND INDEX OF A ARRAY OF A GIVEN SUM.
+#include <stdio.h>
+
+int main() 
+{
+    int sum,i,x,a[30];
+    printf("enetr the value of sum= ");
+    scanf("%d",&sum);
+  printf("enter the elements= ");
+  for(i=1;i<=5;i++)
+  {
+      scanf("%d",&a[i]); //1,2,3,4,5.
+  }
+  for(x=1;x<=5;x++)
+  {
+     for(i=2;i<=5;i++) 
+     {
+         if(a[x]+a[i]==sum)
+         {
+             printf("(the sum of these two elements is equal to  (%d,%d)",a[x],a[i]);
+             break;
+         }
+         else
+         i++;
+     }
+  }
+    
+}
+  
+                                                   18th MAY 2024
+
+
+//// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() 
+{
+    int i,j,c,a[30],n;
+    printf("enter the value of n= ");
+    scnaf("%d",&n);
+    
+   printf("enter the elements= ");
+   for(i=1;i<=5;i++)
+ {
+     scanf("%d",&a[i]);
+ }
+ 
+ for(j=1;j<=5;j++)
+ {
+     for(i=1;i<=5;i++)
+     {
+         if(a[i]>a[i+1])
+         {
+             c=a[i];
+             a[i]=a[i+1];
+             a[i+1]=c;
+         }
+         else
+         i++;
+     }
+ }
+ for(i=1;i<=5;i++)
+ {
+    printf("%d",a[i]); 
+ }
+}
+
+
+
+
+
+
+
+// MISSING AND REPEATED ELEMENTS IN ARRAY.
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main()
+{
+    int n,i,a[30],j,x;
+    printf("enter the value of n= ");
+    scanf("%d",&n);
+    
+    printf("enetr the elements=  ");
+    for(i=1;i<=n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    
+    for(x=1;x<n;x++)
+    {
+        for(i=x+1;i<=n;i++)
+        {
+          if(a[x]==a[i])
+          {
+             printf("the repeated elemenst is = %d\n",a[x]); 
+             break;
+          }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// MISSING AND REPEATED ELEMENTS IN ARRAY.
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main()
+{
+    int n,i,a[30],j,x;
+    printf("enter the value of n= ");
+    scanf("%d",&n);
+    
+    printf("enetr the elements=  ");
+    for(i=1;i<=n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    
+    for(x=1;x<n;x++)
+    {
+        for(i=x+1;i<=n;i++)
+        {
+          if(a[x]==a[i])
+          {
+             printf("the repeated elemenst is = %d\n",a[x]); 
+             break;
+          }
+          else
+          i++;
+        }
+    }
+          
+          
+   for(x=1;x<n;x++)
+    {
+        for(i=x;i<=n;i++)
+        {
+          if(x==a[i])
+          {
+              break;
+          }
+          if(i==4)
+          {
+            printf("the missing elements is= %d\n",x);
+  
+          }
+          else
+          i++;
+          
+        }
+    }
+}
+
+
+  
+                                         [ SDE SHEET (EASY LEVEL) ]  
+
+
+// MISSING AND REPEATED ELEMENTS IN ARRAY.
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main()
+{
+   int a[20],b[30],i,j,n,x,m;
+   printf("enter the size of 1st array= ");
+   scanf("%d",&n);
+   printf("enter the elements= ");
+   for(i=1;i<=n;i++)
+   {
+       scanf("%d",&a[i]);
+   }
+   
+   printf("enter the elements of 2nd array= ");
+   scanf("%d",&m);
+     printf("enter the elements= ");
+     for(i=1;i<=m;i++)
+     {
+         scanf("%d",&b[i]);
+     }
+     
+     for(x=1;x<=m;x++) //m=3
+     {
+         for(i=1;i<=n;i++) //n=5
+         {
+            if(b[x]==a[i]) //b[3]==a[5]
+            {
+                break;
+            }
+            if(i==n && b[x]!=a[i])
+            {
+                printf("No 'b' is not a subset of 'a'\n");
+                break;
+            }
+            else
+            i++;
+         }
+         if(x==3)
+         {
+          printf("yes b is a subset of a\n");   
+          break;
+         }
+     }
+
+   
+   
+          
+          
+     NOT DONE
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  #include<stdio.h>
+int main()
+{
+    int a[30],i,j,x,n,sum1=0,sum2=0,p,e,d,y;
+    printf("enter the elements= ");
+    for(i=1;i<=7;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    
+        for(y=2;y<=7;y++)
+        {
+          
+            for(x=2;x<=y;x++)
+           {
+            
+            for(p=1;p<x;p++)
+            {
+                sum1=sum1+a[p];
+            }
+            d=sum1;
+         }
+       
+        for(i=y+1;i<=7;i++)
+        {
+            sum2=sum2+a[i];
+        }
+        e=sum2;
+        
+
+        if(d==e)
+        {
+            printf("equilibrium point is = %d",a[x]);
+        }
+        else
+        y++;
+    }
+}                             NOT DONE
+
+ 
+ 
+
+
+//find kth smallest elements.
+#include <stdio.h>
+
+int main()
+{
+   int a[30],i,j,k,x,c;
+   
+   printf("enter the elements= ");
+   for(i=1;i<=6;i++)
+   {
+       scanf("%d",&a[i]); //7,10,4,3,20,15.
+   }
+   for(i=1;i<=5;i++)
+   {
+       if(a[i]>a[i+1])
+       {
+           c=a[i];
+           a[i]=a[i+1];
+           a[i+1]=c;
+       }
+       else
+       i++;
+   }
+   for(i=1;i<=6;i++)
+   printf(" %d ",a[i]);
+}                      
+
+
+
+
+
+
+
+
+
+// k=2,n=4;
+arr[]={1,5,8,10};
+output=5;
+the array can be modified as.
+{1+k,5-k,8-k,10-k}={3,3,6,8};
+
+the difference between largest and smallest number =8-3=5.
+
+
+#include<stdio.h>
+int main()
+{
+    int a[10],i,j,k,n;
+    printf("enter the  value of k= ");
+    scanf("%d",&k);
+    
+    printf("enter the value of n= ");
+    scanf("%d",&n);
+    
+    printf("enter the elements= ");
+    for(i=1;i<=4;i++)
+    {
+      scanf("%d",&a[i]);
+    }
+    k=a[k];
+    
+    for(i=1;i<=n;i++)
+    {
+      a[i]=a[i]-k;
+    }
+    for(i=1;i<=n;i++)
+    {
+      printf("%d",a[i]);
+    }
+    
+}
+   
+
+
+
+
+
+
+#include<stdio.h>
+int main()
+{
+ int a[20],i,j,k,n,x;
+ printf("enter the value of k= ");
+ scanf("%d",&k);
+ 
+ printf("enter the value of n= ");
+ scanf("%d",&n);
+ 
+ printf("enter the elements= ");
+ for(i=1;i<=n;i++)
+ {
+ scanf("%d",&a[i]);
+ }
+ for(x=0;x<=n-1;x++)
+ {
+   for(i=x+1;i<=n;i++)
+   {
+     while(i<=i+2)
+     {
+       printf("%d",a[i]);
+     }
+    x++;
+   }
+ }
+}                                  NOT DONE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//SEARCH IN A ROTATED ARRAYS.
+#include<stdio.h>
+int main()
+{
+  int a[20],i,j,x,n,key;
+  printf("enter the value of n= ");
+  scanf("%d",&n);
+
+ 
+
+  printf("enter the elements= ");
+  for(i=0;i<=n-1;i++)
+  {
+    scanf("%d",&a[i]);
+  }
+  
+   printf("enter the value of key= ");
+  scanf("%d",&key); //key=10
+
+  for(i=0;i<=n-1;i++)
+  {
+     if(a[i]==key)
+     {
+       printf("the elements at index=  %d",i);
+       break;
+     }
+     else
+     i++;
+  }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+Find the element that appears once in sorted array.
+#include<stdio.h>
+int main()
+{
+ int a[20],i,j,x,n;
+ printf("enter the value of n= ");
+ scanf("%d",&n);
+ 
+ printf("enter the elements= ");
+ for(i=1;i<=11;i++)
+ {
+  scanf("%d",&a[i]);   
+     
+ }
+ 
+ for(i=1;i<=11;i++)
+ {
+  if(a[i]==)   
+     
+ }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+//array sorted in asending order.
+#include<stdio.h>
+int main()
+{
+    int a[20],i,j,x,c;
+    printf("enter the elements= ");
+    for(i=0;i<5;i++)
+    {
+        scanf("%d",&a[i]); //1,2,5,4,3.
+    }
+for(i=0;i<5;i++)
+{
+   for(j=i+1;j<5;j++)
+   {
+      
+       
+           if(a[i]>a[j])
+           {
+               c=a[i];
+               a[i]=a[j];
+               a[j]=c;
+               
+           }
+           
+       
+   }
+}
+   for(i=0;i<5;i++)
+   {
+       printf(" %d ",a[i]);
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Q>>
+/*arr1[] = {2, 3, 6, 7, 9}
+arr2[] = {1, 4, 8, 10}
+k = 5
+Output:
+6
+Explanation:
+The final sorted array would be -
+1, 2, 3, 4, 6, 7, 8, 9, 10
+The 5th element of this array is 6.*/
+
+
+
+
+#include<stdio.h>
+int main()
+{
+    int a[20],b[30],i,j,k,n,c;
+    printf("enter the elements of 1st array= ");
+    for(i=0;i<5;i++)
+    {
+        scanf("%d",&a[i]);//2,3,6,7,9.
+    }
+    
+     printf("enter the elements of 2nd array= ");
+    for(i=0;i<4;i++)
+    {
+        scanf("%d",&b[i]);//1,4,8,10
+    }
+    
+    for(i=0;i<5;i++)
+    {
+        for(j=0;j<4;j++)
+        {
+            if(a[i]>b[j])
+            {
+                c=a[i];
+                a[i]=b[j];
+                b[j]=c;
+            }
+        }
+    }
+    for(i=0;i<5;i++)
+    {
+        printf(" %d ",a[i]);
+    }
+    
+    for(i=0;i<4;i++)
+    {
+        for(j=i+1;j<4;j++)
+        {
+            if(b[i]>b[j])
+            {
+                c=b[i];
+                b[i]=b[j];
+                b[j]=c;
+            }
+        }
+    }
+    
+    
+    for(j=0;j<4;j++)
+    {
+        printf(" %d ",b[j]);
+    }
+    
+    printf("enter your choice of nth smallest elements= ");
+    scanf("%d",&n);
+    t=
+}
+
+
+
+
+
+
+
+
+
+
+                                
+
+
+
+
+//Rearrange Array Alternately
+
+#include<stdio.h>
+int main()
+{
+   //1,2,3,4,5,6.
+   int a[30],i,x;
+   printf("enter the elements= ");
+   for(i=0;i<=5;i++)
+   {
+       scanf("%d",&a[i]);
+   }
+   
+   for(x=0;x<=5;x++)
+   {
+       for(i=5-x;i>0;i--)
+       {
+           if(a[i]>a[x])
+           {
+           printf("%d,%d,",a[i],a[x]);
+           break; 
+           }
+           
+       }
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Input : 
+// ARRAY SUM DIVISIBALITY ORDER.
+nums = [9, 5, 7, 3]
+k = 6
+Output: 
+True
+Explanation: 
+{(9, 3), (5, 7)} is a 
+possible solution. 9 + 3 = 12 is divisible
+by 6 and 7 + 5 = 12 is also divisible by 6.*/
+
+#include<stdio.h>
+int main()
+{
+    int a[30],i,j,x,n,sum,key;
+    printf("enter the elments= ");
+    for(i=0;i<4;i++)
+    {
+        scanf("%d",&a[i]);//9,5,7,3.
+    }
+    
+    printf("enter the value of key= ");
+    scanf("%d",&key); //key=6.
+    
+    for(x=0;x<3;x++)
+    {
+        for(i=x+1;i<4;i++)
+        {
+           sum=a[x]+a[i]; 
+           if(sum%key==0)
+           {
+               printf("{(%d,%d)} ",a[x],a[i]);
+           }
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//SECOND LARGEST ELEMENTS WITHOUT SORTING.
+
+#include<stdio.h>
+int main()
+{
+    int a[20],i,j,k,x,n,max,t,smax;
+    printf("enter the elements= ");
+    for(i=0;i<=4;i++)
+    {
+        scanf("%d",&a[i]); // 8,9,4,0,1;
+    }
+    max=a[0];
+    for(i=0;i<=4;i++)
+    {
+        if(max<a[i])
+        {
+            max=a[i]; //max=9
+            
+        }
+        
+    }
+    printf("the largest 1st elements is= %d\n",max);
+    t=max;
+  
+    smax=a[0];
+   for(i=0;i<=4;i++)
+   
+{   
+    if(a[i]!=t)
+    {
+        if(smax<a[i])
+        {
+           smax=a[i]; 
+        }
+        
+    }
+    
+}
+printf("the second largest elements is= %d",smax);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//ZEROES TO END.
+
+
+#include<stdio.h>
+//Find missing number in an array.
+int main()
+{
+    int a[20],i,j,k,x,n,c;
+    printf("enter the no of value which you enter= ");
+    scanf("%d",&n);
+    printf("enter the elements= ");
+    
+    for(i=1;i<=n-1;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    
+    for(i=1;i<=n-1;i++)
+    {
+        if(a[i+1]-a[i]==1)
+        {
+            continue;
+        }
+        else
+        c=(a[i]+1);
+        break;
+        
+        
+    }
+    printf("missing number is= %d",c);
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include<stdio.h>
+int main()
+{
+    int a[20],i,j,k,x,n,b[30],c;
+    printf("enter the elements of 1st array= ");
+    for(i=0;i<=4;i++)
+    {
+        scanf("%d",&a[i]);//5,6,0,2,7.
+    }
+    
+       
+    printf("enter the elements  of 2nd array= ");
+      for(i=0;i<=4;i++)
+    {
+        scanf("%d",&b[i]);//1,2,5,3,4.
+    }
+    
+    printf("the sort 1st array= ");
+    for(i=0;i<=4;i++)
+    {
+         for(j=i+1;j<=4;j++)
+         {
+             if(a[i]>a[j])
+             {
+                 c=a[j];
+                 a[j]=a[i];
+                 a[i]=c;
+             }
+         }
+    }
+    for(i=0;i<=4;i++)
+    {
+        printf("%d",a[i]);
+    }
+
+    printf("the sort 2nd array= ");
+  
+  for(i=0;i<=4;i++)
+    {
+         for(j=i+1;j<=4;j++)
+         {
+             if(b[i]>b[j])
+             {
+                 c=b[j];
+                 b[j]=b[i];
+                 b[i]=c;
+             }
+         }
+    }
+     for(i=0;i<=4;i++)
+    {
+        printf("%d",b[i]);
+    }
+    
+    
+  printf("the union of the both of the array elements is= ");
+    for(x=0;x<=4;x++)
+    {
+        for(i=0;i<=4;i++)
+        {
+            if(a[x]>a[i])
+            {
+                c=a[i];
+                a[i]=a[x];
+                a[x]=c;
+            }
+        }
+    }
+        for(i=0;i<=4;i++)
+        {
+
+    printf("%d\n",a[i]);
+        }
+        for(i=0;i<=4;i++)
+        {
+
+    printf("%d",b[i]);
+        }
+    
+    
+}
+
+// NOT DONE
+
+
+
+
+
+
+
+
+
+
+
+
+//Find the Majority Element that occurs more than N/2.
+#include<stdio.h>
+
+int main()
+{
+    int a[20],i,j,k,x,n,t,p;
+    printf("enter the elements= ");
+    for(i=1;i<=7;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    
+    for(i=1;i<=7;i++)
+    
+    {
+        if(a[x]==a[i])
+        {
+            p=p+1;
+            t=p;
+            printf("%d",t);
+        }
+        else
+        x=i;
+        i=x+1;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include<stdio.h>
+//Find the repeating and missing numbers.
+int main()
+{
+    int a[20],i,k,x,n,t;
+    printf("enter the value of n= ");
+    scanf("%d",&n);
+    
+    printf("enter the elements= ");
+    for(i=1;i<=n-1;i++) //1,3,4,5,3;
+    {
+        scanf("%d",&a[i]);
+    }
+    
+     //repeating elements.
+   for(x=1;x<=n-1;x++)
+   {
+       for(i=x+1;i<=n-1;i++)
+       {
+          if(a[x]==a[i])
+          {
+              printf("element is repeated %d\n",a[i]);
+              break;
+          }
+       }
+   }
+   
+   
+   for(x=1;x<n-1;x++)
+   {
+    for(i=1;i<=n-1;i++)
+    
+    {
+    if(x==a[i])
+    {
+        break;//3,1,2,5,3.
+    }
+    else if(i==5)
+    {
+      printf("elemnets is missing= %d\n",x);  
+      break;
+    }
+    else
+    i++;
+    
+   }
+  
+   
+   }  //NOT  DONE.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include<stdio.h>
+int main ()
+{
+    int a[20],i,j,k,x,n;
+    printf("enter the elements= ");
+    for(i=1;i<=5;i++)
+    {
+    scanf("%d",&a[i]); //4,1,2,1,2.
+    }
+    
+    for(x=1;x<=5;x++)
+    {
+        for(i=x+1;i<=5;i++)
+        {
+            if(a[x]==a[i])
+            {
+                
+                break;
+            }
+            else if(i==5)
+            {
+                printf("the once elements is= %d\n",a[x]);
+            }
+            else
+            i++;
+        }
+    }
+}
+
+
+
+
+
+
+
+// TWO SUM PROBLEMS.
+
+#include<stdio.h>
+int main()
+{
+  int a[20],i,j,k,x,n,target;
+  {
+      printf("enter the elemnets= ");
+      for(i=1;i<=5;i++)
+      {
+          scanf("%d",&a[i]);
+      }
+      
+      
+      printf("enter your target= ");
+      {
+       scanf("%d",&target);
+      }
+      
+      
+      for(x=1;x<=5;x++)
+      {
+          for(i=x+1;i<=5;i++)
+          {
+              if(a[x]+a[i]==target)
+              {
+                  printf("(%d %d)",a[x],a[i]);
+              }
+              
+          }
+      }
+      
+    
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Input: N = 7, array[] = {1,2,3,4,5,6,7} , k=2 , right
+Output: 6 7 1 2 3 4 5*/
+#include<stdio.h>
+int main()
+{
+    int a[20],i,j,k,x,n;
+    printf("enter the elements= ");
+    for(i=1;i<=n;i++)
+    {
+        if(i==n)
+        {
+            imax=n;
+        }
+        scanf("%d",&a[i]);
+    }
+    
+    printf("enter the value of k= ");
+    scanf("%d",&k);
+    
+    for(k=imax-k;k<=n;k++) //k=2; imax=7.
+    {
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include<stdio.h>
+int main()
+{
+    int a[20],i,j,k,x,n,amax,t,s,max;
+    printf("enter the value  of  n= ");
+    scanf("%d",&n);
+    printf("enter the elemnts= ");
+    for(i=1;i<=n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(i=1;i<=n;i++)
+    {
+      if(amax<a[i])
+      {
+          amax=a[i];
+          t=i+1;
+      }
+    }
+    printf("the first = %d\n",amax);
+  
+    s=t;
+    max=a[s];
+    for(t=s;t<=n;t++)
+    {
+       if(max<a[t])
+      {
+          max=a[t];
+          t=t;
+      } 
+    }
+    printf("the second= %d",max);
+    t=i+1;
+    s=t;
+    
+}   // not done 95% done.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//REVERSE ANY NUMBER (OWN ALGORITHM);
+
+#include<stdio.h>
+int main()
+{
+    int a[20],i,j,k,x,n,r,p,s;
+    printf("enter the value of x= ");
+    scanf("%d",&x);
+    
+    printf("enter the elements= ");
+    scanf("%d",&n); //1234==>4321
+    
+    for(i=1;i<=x;i++)
+    {
+       r=n%10; //
+       n=n/10;
+       printf("%d",r);
+    }
+}
+
+
+
+
+
+
+
+
+/*Input:N = 4554
+Output:Palindrome Number
+Explanation: The reverse of 4554 is 4554 and therefore it is palindrome number*/
+
+
+#include<stdio.h>
+int main()
+{
+    int a[20],i,j,k,x,n,r,p,s;
+    printf("enter the value of x= ");
+    scanf("%d",&x);
+    
+    printf("enter the elements= ");
+    scanf("%d",&n); //1234==>4321,  1221==>1221.
+    
+    for(i=1;i<=x;i++)
+    {
+       r=n%10; //
+       n=n/10;
+       printf("%d",r);
+    }
+}
+    /*s=r;
+    
+    if(n==s)
+    {
+        printf("palindrome number");
+    }
+    else
+    printf("not a palindrome number");
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+//function (factorial)
+#include<stdio.h>
+int fact(int x); //fn declare.
+void main()
+{
+    int c,n;
+    printf("enter the number= ");
+    scanf("%d",&n);
+    c=fact(n); //fn calling.
+    printf("%d",c);
+
+}
+int fact(int x)
+{
+    int n;
+    if(x==1)
+    {
+      return 1;
+    }
+    else
+    return x*fact(x-1);//fn   
+    
+    
+ 
+    
+}
