@@ -35,6 +35,11 @@ int main()
             case 4:printf("enter the numbers= ");
                     scanf("%d%d",&a,&b);
                     c=a/b;
+                    if(b==0)
+{
+                    printf("not defined");
+                     break;
+}
                      printf("the division of these two numbers is= %d",c);
                     break;
                     
