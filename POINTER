@@ -1,1 +1,30 @@
 
+// sum of two num using pointers.
+#include <stdio.h>
+#include<stdlib.h>
+/*int main()
+{
+  int a=10,b=20;
+  int *p1,*p2,c,d,e;
+  p1=&a;
+  p2=&b;
+  c=*p1 + *p2;
+ 
+  printf("%d",c);
+  
+  
+}*/
+// swap of two num using pointers.
+
+/*int main()
+{   printf("the value of a,b is before swapping (10,20)");
+    int a=10,b=20,*p,*q,c;
+    p=&a;
+    q=&b;
+    c=*p; //c=10
+    p=*q; //p=20
+    q=c;  //q=10
+    printf("the value of a,b after swapping  is= (%d,%d)",p,q);
+}*/
+
+
