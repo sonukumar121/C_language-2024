@@ -28,3 +28,69 @@
 }*/
 
 
+
+
+#include<stdio.h>
+//arrange the elements using pointers.
+/*int main()
+{
+    
+  int *p,*q,x,i,c,a[20];
+  printf("enter the elemnets= ");
+  for(i=1;i<=5;i++)
+  {
+    scanf("%d",&a[i]);  
+  }
+  
+
+ 
+ for(x=1;x<=5;x++)
+ {
+     for(i=x+1;i<=5;i++)
+     {
+         if(a[x]<a[i])
+         {
+             p=&a[i];
+             q=&a[x];
+             c=*p;
+            *p=*q;
+             *q=c;
+         }
+     }
+ }
+ for(i=1;i<=5;i++)
+ {
+     printf("%d",a[i]);
+ }
+ 
+}*/
+
+//find the max elements in array using pointers.
+
+
+/*int main()
+{
+  int *max,x,n,c,i,a[20];
+  printf("enter the elements= ");
+  for(i=1;i<=5;i++)
+  {
+    scanf("%d",&a[i]);    
+  }
+  max=&a[1];
+  for(i=1;i<5;i++)
+  {
+      if(*max<a[i+1])
+      {
+          max=&a[i+1];
+          c=*max;
+      }
+      
+  }
+  printf("the MaxM value in aaray is= %d",c);
+    
+}*/
+
+
+
+
+
