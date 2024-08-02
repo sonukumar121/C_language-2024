@@ -220,7 +220,11 @@ Expected Output :
      }
      printf("the sum of elements is= %d",sum);
  }
- 
+
+
+ [// NOT DONE]
+
+
 // type casting one data type--->another datatype.
 int main()
 /* {
