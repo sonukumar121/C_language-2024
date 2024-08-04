@@ -1,4 +1,5 @@
-
+C language is a type of programming language which are mid-level langauage, and it was developed by dennis richhe in 1972.for the purpose for making 
+system software,application software,os.like kernel.
 syntax of c
 #include<stdio.h>
 #-->pre processor directive. and .h-->headerfile and stdio-->standard input $ output.
