@@ -278,6 +278,119 @@ int main()
  }
     */
     // create stacks using pointer.
+
+
+
+
+
+
+
+
+#include<stdio.h>
+//stack using pointers.
+#define max 5
+#define *P[5]
+int top=-1;
+int item,i,c;
+int stack[max];
+
+void push(item)
+ {
+   if(top==max-1)
+   {
+     printf("stack is full");  
+   }
+   else
+   stack[++top]=item;
+ //  printf("element is inserted= %d",stack[top]);
+   for(i=0;i<=top;i++)
+   {
+     p[i]=&stack[top];
+     printf("element is inserted= %d",*(int*)p[i]);
+   }
+   
+  
+   
+ }
+ 
+ void pop()
+ {
+     if(top==-1)
+     {
+         printf("stack is empty");
+     }
+     else
+    // c=stack[top--];
+    for(i=5;i<=0;i--)
+    p[i--]=&stack[top--];
+     //printf("element is deleted= %d",c);
+     printf("element is deleted= %d",*(int*)p);
+ }
+ 
+ void display()
+ {
+     for(i=1;i<=5;i++)
+     {
+         printf("%d",*(int*)p[i]);
+     }
+ }
+ 
+ void Exit()
+ {
+     return 0;
+ }
+ 
+ 
+ 
+
+int main()
+{
+ printf("1> push\n 2> pop\n 3> Display\n 4>Exit\n");
+ while(1)
+ {
+     int  choice,item;
+     printf("enter your choice= ");
+     scanf("%d",&choice);
+     switch(choice)
+     {
+         case 1: printf("enter the item= ");
+                 scanf("%d",&item);
+                 push(item);
+                 break;
+                 
+         case 2:pop();
+         break;
+     
+         case 3:display();
+               break;
+               
+        case 4:Exit();
+               return 0;
+        
+        default: printf("invalid choice try again");       
+ }
+ }
+}
+ //INCOMPLETE.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
   
 
 
