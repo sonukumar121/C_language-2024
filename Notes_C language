@@ -8,6 +8,7 @@ main-->ek thara ka function hai.
 void-->isme koi bhi value return nhi karega.
 printf("  ");-->for output.[both are predefined function]
 scanf(" ");-->for input.
+for double float data-type=%lf.
 
 1) PRE-PROCESSOR DIRECTIVE==>are lines included in a program that begin with characters # which makes them different from a typical source content.
 
@@ -70,7 +71,7 @@ getch()==>holds the screen.
                   case2: statements;
                          break;
 12) Loops==> loop is used to express to repaeat a block of code until the given condition is true.
-       *TYPES--> 1) WHILE LOOPS ==>phle condition check karega phr statement execute karta.-->isme pta hi hota kha tak jana hai.
+       *TYPES--> 1) WHILE LOOPS ==>phle condition check karega phr statement execute karta.-->isme pta nhi hota kha tak jana hai.
                   2)DO-WHILE LOOPS==>phle statement execute karta phr cinditions check karta.
                   3)FOR LOOPS==>repeat block of code -->isme limit pata rhta hai kha tak jana hai.
 
