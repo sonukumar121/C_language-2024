@@ -376,9 +376,33 @@ int main()
  
  
  
+ #include<stdio.h>
+int main()
+{
+  int *P,*q,i,j,x,target,a[5];
+  printf("enter the elements=  ");
+  for(i=1;i<=5;i++)
+  {
+      scanf("%d",&a[i]);//5,6,7,9,10.
+  }
+  printf("enter your target= ");
+  scanf("%d",&target);
+  for(x=1;x<=5;x++)
+  {
+      for(i=x+1;i<5;i++)
+      {
+          p=&a[x];
+          q=&a[i];
+          if(*p + *q==target)
+          {
+            printf("(%d %d)",*p,*q); 
+            break;
+          }
+      }
+  }
+}
  
- 
- 
+ // //INCOMPLETE.
  
  
  
