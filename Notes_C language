@@ -93,6 +93,91 @@ gets()-->for input
 puts()-->for output
  
 POINTER-->pointer is a variable that can able to hold adress of another variable.
+#include<stdio.h>
+// pointer to pointer-->**-->strip.
+/*int main()
+{
+    
+    int *p,**q,a=10,b;
+   p=&a;
+   q=&p;
+   printf("%d",**q);
+    
+}
+
+//Types of pointer.
+  1> void pointer
+   *A pointer which is declared by the help of 'void' keyword is called void pointer.
+   *it can hold any type of adress.
+   *the size of void pointer is 2 byte.
+   *it is also known as Generic pointer.
+   
+   2>syntax=>void *var-name;*/
+  
+  /*void main()
+  {
+      void *p;
+      int a=10;
+      p=&a;
+      printf("%d",*(int *)p);
+  }*/
+  
+   /*void main()
+  {
+      void *p;
+      int a=10;
+      char b='A';
+      p=&b;
+      printf("%d",*(char *)p);-->type casting.
+  }*/
+  
+  /*2>NULL pointers=>A pointer variable is intilaize with the NULL value at the 
+    time of pointer decleration is called NULL pointer,
+    the NULL pointer that doesnot point to any memory location.
+    
+   *Datatype *Var-name='\o';-->macro->predefined in stdio.h headerfile.
+   #define NULL=0-->this is not a type of value this is  only zero.
+   
+   Exam=>void main()
+   
+   {
+       int *P=NULL;
+       printf("%d",*p);
+       //output=>0;
+   }*/
+  
+    /*3>Wild pointers.->A pointer variable that not initilazised with any address is 
+      called wild pointer.
+      *wild pointer is also known as bad pointer because it holds the address of random memory location.
+      *Syntax==>data-type *varname;*/
+      
+     /* void main()
+      {
+          
+          int *P,*q;
+          printf("%d %d ",p,q);
+      }*/
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
 
 15) FUNCTION==>it is the block of code which takes input from the user and do some specific calculations and gives output.
 
