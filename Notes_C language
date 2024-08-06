@@ -81,7 +81,7 @@ getch()==>holds the screen.
 
 14)STRINGS==>strings is a sequence collectio of characters and it always ends with null ('\0').
 
-1)STREN()-->length of strings 
+1)STRLEN()-->length of strings 
 2)STRCPY()-->copy
 3)STRCAT()-->merge
 4)STRCMP()-->compare
