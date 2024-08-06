@@ -17,7 +17,7 @@ for double float data-type=%lf.
             compiler show all errors and warning at same time.
             debugging is slow.
 
-3) INTERPRETER==> it scans the programs line by line and translate it into machine code.
+3) INTERPRETER==> it scans the programs line by line then translate it into machine code.
                interpreter show one erroe at a time 
                debugging is slow
 
