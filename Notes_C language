@@ -352,7 +352,7 @@ POINTER-->pointer is a variable that can able to hold adress of another variable
 
 *** --> arguemnt means value and parameter means jisse value pass horhi.
  
-17) [CALL BY VALUE] => 1) in this case we are passing the value of the variable.x(a).
+17) [CALL BY VALUE] => 1) in this case we are passing the value of the variable.x(a) with parametr.
                      2) cant change the value of actual argument using formal argument.
                      3) no pointers are used.
                      4) its required more memory.
