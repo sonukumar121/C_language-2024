@@ -1,1 +1,16 @@
+#include<stdio.h>
+int fun(int array[])
+{
+    int i;
+    for( i=0;i<4;i++)
+    {
+        printf("the value at %d is %d\n",i,array[i]);
+    }
+}
 
+int main()
+{
+   int arr[]={10,20,30,40};
+   fun(arr);
+
+}
