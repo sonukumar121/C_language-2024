@@ -47,3 +47,120 @@ int main()
    
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//7:35--> TIME
+//array pasing through funtions.
+#include<stdio.h>
+/*int fun(int array[])
+{
+    int i;
+    for( i=0;i<=4;i++)
+    {
+        printf("the value at %d is %d\n",i,array[i]);
+    }
+}
+
+int main()
+{
+   int arr[5],i;
+   printf("enter the numbers= ");
+   for(i=0;i<=4;i++)
+   {
+      scanf("%d",&arr[i]); 
+     
+   }
+    fun(arr);
+  
+   
+
+}*/
+
+
+//square of any number using functions.
+/*void square(int m)
+{
+    int c;
+  c=m*m;
+  printf("the sqare os this number is= %d",c);
+}
+
+int main()
+{
+  int r;
+  printf("enter any number= ");
+  scanf("%d",&r);
+  square(r);
+}*/
+
+
+
+ //Write a program in C to get the largest element of an array using the function.
+int larg(int array[])
+ {
+   int i,j,k,a[30],c,max=a[1];
+   
+   for(i=1;i<=5;i++)
+   {
+      
+         if(a[i]>max)
+         {
+           max=a[i];
+           
+          
+         }
+        
+   }
+   printf("largest element is= %d",max);
+ }
+
+int main()
+{
+    int a[5],i;
+    printf("enter the numbers= ");
+    for(i=1;i<=5;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    larg(a);
+}  //INCOMPLETE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
