@@ -3,38 +3,42 @@
 int main()
 {
     int player1,player2,h;
-    printf("1> New Game\n 2> Continue\n 3> Settings\n 4>Exit\n);
+     printf("For example 1>for rock=> press enter '1'\n 2>for paper=> press enter '2'\n 3>for scissors=> press enter '3'\n");
     while(1)
     {
+        int choice;
+          printf("enter your choice= ");
+          scanf("%d",&choice);
       switch(choice) 
+      
       {
-                  printf("enter your choice= ");
-                  scanf("%d",&choice);
-          case 1: 
-                  printf("For example 1>for rock=> press enter 'r'\n 2>for paper=> press enter 'p'\n 3>for scissors=> press enter 's'\n);
-                  printf("enter your name and start the game= ");
-                  scanf("%d",&player1);
-                  printf("enter your hand gestures= ");
-                  scanf("%d",&h);
-                  break;
-                  
-           case 2:printf("press enter to continue");
-           
-           case 3:settings();
-           
-           case 4: return 0;
-           
-           default: printf("invalid choice");
-                  
+                
+          case 1: printf("you choose->Rock\n");
+                  printf("computer choose paper\n");
+                  printf("you lost try again\n");
+                  break; 
+
+
+          case 2:printf("you choose->paper  \n");
+                 printf("computer choose scissors\n");
+                 printf("you lost try again\n");
+                 break;
+
+
+          case 3:printf("you choose->scissors\n");
+                 printf("computer choose paper\n");
+                 printf("you win\n");
+                 break;
+                 
+          default:printf("invalid choice");
+                 
+                
+         
+        }          
       }
     }
     
-   void  settings()
-    {
-      
-      
-        
-    }
+ 
     
     
     
@@ -49,6 +53,18 @@ int main()
     
     
     
+
+
     
     
-}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
