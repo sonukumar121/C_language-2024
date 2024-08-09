@@ -1,3 +1,109 @@
+/*15) FUNCTION==>it is the block of code which takes input from the user and do some specific calculations and gives output.
+
+    1)no argument and  no return value.
+    2)no argument and  return value.
+    3)argument    and  no return value.
+    4)argument    and  return value. */
+    
+    
+    
+   // 1)no argument and  no return value.
+    #include<stdio.h>
+  /* void sum();//fn declare.
+   void  main()
+    {
+      
+       sum();//fn calling.
+    }
+    
+    void sum()//fn define.
+    {
+       int a,b,c;
+       printf("enter the two number= ");
+       scanf("%d%d",&a,&b); 
+       c=a+b;
+       printf("sum is= %d",c);
+    }*/
+    
+    
+   // 2)no argument and  return value.
+     /*int sum();//fn declare
+     void main()
+     {
+         int x;
+        x=sum();
+        printf("sum is= %d",x);
+     }
+    
+     int sum()//fn define.
+     {
+       int a,b,c;
+       printf("enter the two number= ");
+       scanf("%d%d",&a,&b);
+       c=a+b;
+       return c;
+     }*/
+    
+    
+     //3)argument    and  no return value.
+      /* void sum(int ,int );//formal parameter.-->we should to specify data_type of the variable but optional is (name of the variable);
+       void main()
+       {
+         int a,b;
+         printf("enter the two number= ");
+         scanf("%d%d",&a,&b);
+         sum(a,b);//a,b-->actual paramter passing actual argument of the  variable a & b.
+       }
+       
+       void sum(int m, int n)//fn define-->we should to specify data_type or name of the variable.
+       {
+           int c;
+          c=m+n; 
+          printf("sum is= %d",c);
+       }
+     */
+    
+    //4)argument    and  return value. 
+    /*int sum( int m ,int n);//fn declare.
+    int main()
+    {
+        int a,b,x;
+      x=sum(a,b); //fn calling
+      printf("sum is=%d",x);
+    }
+    
+    int sum(int m, int n)
+    
+    {
+        int a,b,c;
+        printf("enter the two  number= ");
+        scanf("%d%d",&a,&b);
+        return a+b;
+        
+    }*/
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+//PASSING ARRAY THROUGH FUNCTIONS.
 #include<stdio.h>
 int fun(int array[])
 {
