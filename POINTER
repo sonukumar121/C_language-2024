@@ -408,7 +408,47 @@ int main()
  
  
  
- 
+
+//Missing in Array[1,2,4,5];
+#include<stdio.h>
+void missel(int*);
+void main()
+{
+  int a[5];
+  printf("enter the numbers= ");
+  for(i=1;i<=5;i++)
+  {
+      scanf("%d",&a[i]);
+  }
+  missel(a);
+}
+  
+void missel(int *p)
+{
+    int i;
+    for(i=1;i<=5;i++)
+    {
+      p[i]=&a[i];  
+    }
+    
+  for(i=1;i<5;i++)
+  {
+      if(p[i]-p[i+1]!=1)
+      {
+        printf("missing elements is=%d",a[i]+1);  
+      }
+      else
+      i++;
+  }
+}
+  
+  
+  
+  
+  
+  
+
+
  
  
  
