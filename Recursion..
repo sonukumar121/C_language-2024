@@ -157,6 +157,38 @@ void natural(int x)
 
 
 
+#include<stdio.h>
+// reverse an array using recursion.
+int arev(int [],int,int);
+void main()
+{
+ int i,n;
+ printf("enter the size of array= ");
+ {
+     scanf("%d",&n);//n=5
+    
+ }
+  
+   int a[n];
+ printf("enter the elements= ");
+ for(i=1;i<=n;i++)
+ {
+   scanf("%d",&a[i]); //1,2,3,4,5. 
+ }
+   arev(a,5,1);//fn calling.
+}
+
+
+int arev(int a[],int i,int n)
+{
+    if(i>=n) //5>=1
+    {
+     printf("%d,",a[i]);
+    return arev(a,i-1,n);   
+    }
+  
+}
+
 
 
 
