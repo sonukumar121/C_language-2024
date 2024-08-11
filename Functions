@@ -519,7 +519,134 @@ void natural(int x)
   
   
   
+
+
+
+#include<stdio.h>
+//print natural number using recursion.
+/*int natural(int x);//fn declare
+void  main()
+{
+  int n=1;
+  natural(n);
+}
+
+int natural(int x) //fn define.
+{
+   if(x<=10)
+   {
+       printf("%d,",x);
+       return natural(x+1);
+   }
+   
+}*/
+// find factorial using recursion.
+/*int fact(int x);
+void main()
+{
+  int n,y;
+  printf("enter the number= ");
+  scanf("%d",&n);
+  y=fact(n);
+ printf("factorial is= %d",y);
   
+}
+
+int fact(int x)
+{
+  if(x==1)
+  {
+      return 1;
+  }
+  else
+  return x*fact(x-1);
+}*/
+
+// print array elements using recursion.
+  /* void arrprint(int [],int);//fn declare.only data_type.
+   void main()
+   {
+       int a[5],i,n;
+       printf("enter the size of array= ");
+       scanf("%d",&n);//n=5
+       
+       printf("enter the numbers= ");
+       for(i=0;i<=4;i++)
+       {
+           scanf("%d",&a[i]);//1,2,3,4,5.
+       }
+       arrprint(a,0);//actual argument passing.
+   }
+   
+   void arrprint(int a[],int i)//fn define.//datatype with varaiable
+   {
+     if(i<=4)
+     {
+         printf("%d,",a[i]);
+         arrprint(a,i+1);
+     }
+     
+   }*/
+   
+ //sum of array elements using recursion.
+ int  arrsum(int [],int,int);//fn declare with only datatype.
+ void  main()
+ {
+     int n,i,a[5],Sum;
+     printf("enter the size of array= ");
+     scanf("%d",&n);
+     printf("enter the elements= ");
+     for(i=1;i<=5;i++)
+     {
+       scanf("%d",&a[i]);  
+     }
+     Sum=arrsum(a,1,n);
+     printf("sum is= %d",Sum);
+     
+ }
+
+int arrsum(int a[],int i,int n)
+{
+  int sum=0;
+  if(i<n)
+  {
+    sum=sum+a[i];  
+  }
+  return arrsum(a,i+1,n);
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   
   
