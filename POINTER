@@ -443,7 +443,80 @@ void missel(int *p)
 }
   
   
-  
+
+//function array pointers
+#include<stdio.h>
+/*void  sum(int *);
+void main()
+{
+ int i,s,a[5];
+ printf("enter the numbers= ");
+ for(i=0;i<=4;i++)
+ {
+     scanf("%d",&a[i]);
+    
+ } 
+ sum(a);
+}
+ void sum(int *p)
+ {
+     int i,sum=0,b[5],c,j;
+     for(i=0;i<=4;i++)
+     {
+       b[i]=*p;  
+       sum=sum+*p;
+       p++;
+     }
+     printf("sum is=%d\n",sum);
+     for(i=0;i<=4;i++)
+     {
+         printf("%d\n",b[i]);
+     }
+     printf("now elements in array b store is= ");
+    for(i=0;i<5;i++)
+{
+    for(j=i+1;j<5;j++)
+    {
+        if(b[i]>b[j])
+        {
+            c=b[i];
+            b[i]=b[j];
+            b[j]=c;
+        }
+    }
+}
+
+for(i=0;i<5;i++)
+{
+  printf("%d,",b[i]);  
+}
+}*/
+
+
+//call by refernce-->sum of two numbers;
+/*void sum(int*,int*);
+void main()
+{
+  int a,b;
+  printf("enter the two number= ");
+  scanf("%d%d",&a,&b);
+  sum(&a,&b);
+}
+
+void sum(int *p,int *q)
+{
+  int c;
+  c= *p + *q;
+  printf("sum is=%d",c);
+}*/
+
+ 
+
+
+
+
+
+
   
   
   
