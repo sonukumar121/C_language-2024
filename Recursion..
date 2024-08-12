@@ -478,3 +478,35 @@ void pstar(int r,int c,int n )
   
   
 }
+
+
+
+
+
+
+
+//#include<stdio.h>
+int rem(int ,int,int,int);
+void main(int n,int r)
+{
+  printf("enter the number= ");
+  scanf("%d",&n);//n=12
+  r=(n%10)*10+(r/10);
+  rem(n,r,1,1);
+  
+}
+
+int rem(int n,int r,int i,int m)
+{
+    
+  if(i<=r)
+  {
+      int a;
+      a=n;//a=12
+      m=m*a;
+      return (n,r,i+1,m);
+  }
+  printf("output is=%d",m);
+    
+    
+}//INCOMPLETE.
