@@ -288,6 +288,47 @@ if(i==6)
 
 
 
+#include<stdio.h>
+void Mmin(int[],int,int,int);
+int main()
+{
+  int i,n,a[5];
+  printf("enter the numbers = ");
+  for(i=1;i<=5;i++)
+  {
+   scanf("%d",&a[i]);   
+  }
+  Mmain(a,a[1],1,a[1]);
+  
+}
+
+void Mmain(int a[],int max,int i,int min)
+{
+  while(i<=5) 
+ {
+  if(max<a[i+1])
+  {
+     max=a[i+1]; 
+  }
+  else
+  return Mmain(a,max,i+1,min);
+ }
+ printf("max value is= %d",max);
+
+while(i<=5)
+{
+if(min<a[i+1])
+{
+  continue;  
+}
+else
+min=a[i+1];
+return (a,max,i+1,min);
+}
+printf("min elements is= %d",min);
+}
+
+
 
 
 
