@@ -447,4 +447,34 @@ while(i<5)
 printf("number of repeated elements is= %d",c);
 
 }
-// all star pattern print using recursion.
+// all star pattern print using recursion
+
+
+
+
+#include<stdio.h>
+void pstar(int,int,int);
+void main()
+{
+    int n;
+    printf("enter the line = ");
+    scanf("%d",&n);//n=5
+ pstar(1,1,n);   
+}
+
+void pstar(int r,int c,int n )
+{
+    if(r<=c && c<=n)
+    {
+      printf("*");
+      return pstar(r,c+1,n);
+    }
+    else
+    printf("\n");
+    
+    
+    
+ 
+  
+  
+}
