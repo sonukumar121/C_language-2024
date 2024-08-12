@@ -244,7 +244,42 @@ int asort(int a[],int n,int i)
 
 
 
+#include<stdio.h>
+//Linear search using Recursion.
+int lsearch(int [],int,int,int);//fn declare
+void main()
+{
+  int a[5],i,n,size=5;
+  printf("enter the elements= ");
+  for(i=1;i<=size;i++)
+  {
+    scanf("%d",&a[i]);  
+  }
+    printf("enter the searching elements= ");
+    scanf("%d",&n);
+    lsearch(a,n,5,1);//fn calling actual argument always pass from the main function.
+}
 
+int lsearch(int a[],int n,int size,int i)//fn define
+{
+ while(i<=size)
+ {
+  
+  if(a[i]==n)
+  {
+      printf("searching elements is found");
+      break;
+  }
+  else
+  return lsearch(a,n,size,i+1);
+  
+}
+if(i==6)
+{
+   printf("elemnts is not in arrays"); 
+}
+}
+//
 
 
 
