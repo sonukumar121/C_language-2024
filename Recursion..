@@ -335,3 +335,46 @@ printf("min elements is= %d",min);
 
 
 
+
+
+
+
+
+
+
+
+//#include<stdio.h>
+//Missing elements using recursions.
+int  miss(int [],int);
+void main()
+{
+  int i,a[5],n;
+  printf("enter the elements= ");
+  for(i=0;i<=3;i++)
+  {
+      scanf("%d",&a[i]);//1,3,4,5
+  }
+  miss(a,0);
+}
+
+int  miss(int a[],int i)
+{
+  while(i<3)
+  {
+  if(a[i+1]-a[i]!=1)
+  {
+        printf("missing elements is=%d",a[i+1]-1);
+        break;
+  }
+  else
+
+  return (a,i+1);
+
+}
+
+}
+
+
+
+
+
