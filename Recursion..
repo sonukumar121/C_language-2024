@@ -279,14 +279,14 @@ if(i==6)
    printf("elemnts is not in arrays"); 
 }
 }
-//
+// complete
 
 
 
 
 
 
-
+               // incomplete below alll
 
 #include<stdio.h>
 void Mmin(int[],int,int,int);
@@ -447,3 +447,4 @@ while(i<5)
 printf("number of repeated elements is= %d",c);
 
 }
+// all star pattern print using recursion.
