@@ -378,3 +378,35 @@ int  miss(int a[],int i)
 
 
 
+
+
+
+
+
+//#include<stdio.h>
+int  fact(int);
+void main()
+{
+int n;
+printf("enter any number= ");
+scanf("%d",&n);//n=5-->120
+
+fact(n);
+}
+
+int fact(int n)
+{
+    int i=1;
+    while(i<=5)
+    {
+  if(n==1)
+  {
+    return 1;  
+  }
+  else
+  ++i;
+  return printf("%d",n*fact(n-1));
+    }
+}
+
+
