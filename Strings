@@ -1,1 +1,49 @@
+/*65 to 90 (A TO Z).
+95 to 127 (a to z).
+strings series then strings with recursion.
+Input:
+s = Geeks
+Output: skeeG*/
+#include<stdio.h>
+#include<string.h>
+
+int revword(char[],int);//fn declare
+int main()
+ 
+{
+ char str[20];
+ int i=0;
+ printf("enter any strings= ");
+ scanf("%s",&str);//raghav --> i=6 null value
+ puts(str);
+ 
+ 
+ if(str[i]=='\0')
+ {
+   i=i-1;
+   revword(str,i);	
+ }
+ else
+  return revword(str,i+1);
+ 	
+ }
+
+
+int  revword(char str[],int i)
+{
+  if(i>=0)
+  {
+  
+   printf("%c",str[i]);	
+   return revword(str,i-1);
+  
+  
+}
+}
+
+
+
+
+
+
 
