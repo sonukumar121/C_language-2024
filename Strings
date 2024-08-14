@@ -1,3 +1,4 @@
+
 /*65 to 90 (A TO Z).
 95 to 127 (a to z).
 strings series then strings with recursion.
@@ -17,6 +18,8 @@ int main()
  scanf("%s",&str);//raghav --> i=6 null value
  puts(str);
  
+ while(str[i]!='\0')
+ {
  
  if(str[i]=='\0')
  {
@@ -24,10 +27,13 @@ int main()
    revword(str,i);	
  }
  else
-  return revword(str,i+1);
+  //return revword(str,i+1);
+  i++;
  	
  }
-
+ 
+ return revword(str,i);
+}
 
 int  revword(char str[],int i)
 {
@@ -40,10 +46,3 @@ int  revword(char str[],int i)
   
 }
 }
-
-
-
-
-
-
-
