@@ -1,1 +1,84 @@
+#include<Stdio.h>
+int balance=5000,n,pin,x,amount;
+int atm();
+int main()
+{
+	char str[20];
+	
+	printf("1>Sbi bank\n2>Axis Bank\n3>ICICI Bank\n4>Canara Bank\n");
+	printf("please! choose your bank option in which your account is hold= ");
+	scanf("%d",&n);//n=3
+	printf("Enter your name=  ");
+	scanf("%d\n",&str);
+	printf("Enter your atm pin= ");
+	scanf("%d",&pin);
+	if(pin==198)
+	{
+	  atm();	
+	}
+}
+		int atm()
+		{
+		
+	while(1)
+	{
+	
+     	
+		{
+		
+	  int choose;
+	  printf("1>Withdrawl\n 2>Deposit\n 3>Check Balance");
+	  scanf("%d",&choose);
+	  switch(choose)
+	  {
+	  	case 1:printf("Enter your amount= "); 
+               scanf("%d",&amount);
+               printf("%d= amount withdrawl",amount);
+               balance=balance-amount;
+               printf("your balance is=%d",balance);
+               printf("do you want to perform another transctions=> 1>yes, 2>NO");
+               scanf("%d",&x);
+               if(x==1)
+               {
+               	atm();
+			   }
+			   else
+               break;
+              
+               
+               
+        case 2:printf("Enter your amount= ");
+		       scanf("%d",&amount);
+		       printf("%d= deposit to your account Sucessfully!");
+		       balance=balance+amount;
+		       printf("your balance is=%d",balance);
+		        printf("do you want to perform another transctions=> 1>yes, 2>NO");
+               scanf("%d",&x);
+               if(x==1)
+               {
+               	atm();
+			   }
+			   else
+               break;
+		      
+		       
+		       
+		case 3:printf("your balance is= %d",balance);  
+		       printf("do you want to perform another transctions=> 1>yes, 2>NO");
+               scanf("%d",&x);
+               if(x==1)
+               {
+               	atm();
+			   }
+			   else
+               break; 
+		       
+			          
+	  	
+	  }
+	}
+	
+	
+}
+}
 
