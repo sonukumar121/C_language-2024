@@ -114,3 +114,28 @@ int palindrome(char str[],int i,int n)
 
 
 
+
+
+
+///*s = hello
+Output: h
+Explanation: In the given string, the first character which is non-repeating is h, as it appears first and there is no other 'h' in the string.*/
+#include<stdio.h>
+void fstring(char [],int,int );
+int  main()
+{
+  int char str[20];
+  int i;	
+  printf("enter the strings= ");
+  scanf("%s",str);//hello.
+  fstring(str,0,1)	
+}
+void fstring(char str[],int i,int j)
+{
+  while(str[i]!=0)
+  {
+  	if(str[i]!=str[j])
+  }	
+}
+
+
