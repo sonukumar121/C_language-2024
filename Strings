@@ -139,3 +139,38 @@ void fstring(char str[],int i,int j)
 }
 
 
+
+
+
+
+
+
+#include<stdio.h>
+//all strings fn using recur..
+int cmp(char [],char [],int );
+int  main()
+{
+	char str1[20],str2[20];
+	printf("enter the first strings= ");
+	scanf("%s",&str1);
+	printf("enter the second strings= ");
+	scanf("%s",&str2);
+	cmp(str1,str2,0);
+}
+  int cmp(char str1[],char str2[],int i)
+{
+	while(str1[i]!='\0')
+	{
+	
+	if(str1[i]==str2[i])
+	{
+	 printf("strings are equal");
+	 break;	
+	}
+	return cmp(str1,str2,i+1);
+   }
+   if(str1[i]=='\0' && str2[i]=='\0')
+   {
+   	printf("strings are not equal");
+   }
+}
