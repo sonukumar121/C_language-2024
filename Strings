@@ -174,3 +174,37 @@ int  main()
    	printf("strings are not equal");
    }
 }
+
+
+
+
+///*X = "25", Y = "23"
+Output:
+48*/
+#include<stdio.h>
+int main()
+{
+	char str[2],str2[2];
+	char x,y,z,i;
+	printf("enter the first strings= ");
+	scanf("%s",&str);//25
+	
+	printf("enter the second strings= ");
+	scanf("%s",&str2);//23
+ 
+    for(i=0;i<=0;i++)
+    {
+    	y=str[i]+str2[i];
+  	   printf("%c",y);
+  	   
+    	x=str[i+1]+str2[i+1];
+    	//y=str[i]+str2[i];
+    	//z=x+y;
+  	   printf("%c",x);//"g"
+  	   
+    
+	}
+	
+	
+	
+}
