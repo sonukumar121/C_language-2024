@@ -30,6 +30,13 @@
 gets()-->for input
 puts()-->for output
 
+21) String are actually one dimensional of any character which is terminated by null character this null character and this little character indicates and of these string.
+He asked for null character is 0.
+*REPRESENTATION OF STRING DECLERATION.
+1)char str[6]={'H','E','L','L','O','\O'};
+2)char str[]="HELLO";
+3)charstr[20];
+4)string pointer==>char *str="hello";
 
 
 
