@@ -1,3 +1,54 @@
+14)STRINGS==>strings is a sequence collectio of characters and it always ends with null ('\0').
+
+ //strings are actually one dimensional of array characters which is terminated by '\o
+(NULL characters).This NULL characters indicates end of the string.
+
+2>the ASCII code of'\o' characters is zero.
+3>Syntax=> datatype string.name[size];
+
+4>Decleration of Strings.
+  
+  i>charaters array
+   
+   *char str[4]={'s','o','n','u'};
+   *char str[]="sonu";
+   *char str[5];--->run time input of strings.
+   
+   
+  ii>String Pointer.
+  
+    char *str="sonu";
+
+1)STRLEN()-->length of strings 
+2)STRCPY()-->copy
+3)STRCAT()-->merge
+4)STRCMP()-->compare
+5)STRLWR()-->lower case
+6)STRUPR()-->upper case
+
+*STRINGS (input/output)
+gets()-->for input
+puts()-->for output
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*65 to 90 (A TO Z).
 95 to 127 (a to z).
