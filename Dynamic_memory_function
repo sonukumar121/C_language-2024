@@ -1,1 +1,61 @@
+#include<stdio.h>
+#include<stdlib.h>
+//using dma fn-->malloc()
+int main()
+{
+	int *ptr,i,n;
+  printf("enter the number of integers= ");
+  scanf("%d",&n);//n=3
+  printf("%d",sizeof(int));
+  ptr=(int*)malloc(n*sizeof(int));//n=3//perfect example-->pasword creation.
+  printf("enter the elements= ");
+  if(ptr==NULL)
+  {
+  	printf("memory not avilable");
+  	exit(1);
+  }
+  for(i=0;i<=n-1;i++)
+  {
+   scanf("%d",ptr+i);	
+  }
+   for(i=0;i<=n-1;i++)
+   {
+   	 printf("%d",*(ptr+i));
+   	 
+   }
+  return 0;	
+}
+
+
+//using calloc();
+  
+  int main()
+{
+	int *ptr,i,n;
+  printf("enter the number of integers= ");
+  scanf("%d",&n);//n=3
+  printf("%d",sizeof(int));
+  ptr=(int*)calloc(n,sizeof(int));//n=3//perfect example-->pasword creation.
+  printf("enter the elements= ");
+  if(ptr==NULL)
+  {
+  	printf("memory not avilable");
+  	exit(1);
+  }
+  for(i=0;i<=n-1;i++)
+  {
+   scanf("%d",ptr+i);	
+  }
+   for(i=0;i<=n-1;i++)
+   {
+   	 printf("%d",*(ptr+i));
+   	 
+   }
+  return 0;	
+}
+
+
+
+
+
 
