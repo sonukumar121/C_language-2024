@@ -1,3 +1,62 @@
+16) ACTUAL PARAMETER AND FORMAL PARAMETER.==> ACTUAL PARAMTER MEANS VALUE OF THE PARAMETER  PASSES DURING CALLING THE FUNCTIONS AND FORMAL PARAMETER MEANS WHAT TYPPE OF VARIABLE PARAMTER  DURING DECLARE OF THE FUNCTION.
+     [IF I CHANGE IN THE FORMAL PARAMETR ARGUMENT  ANY THING THEN THEY WOULD NOT AFFECT ON ACTUAL ARGUMENT VICE VERSA .]
+
+*** --> arguemnt means value and parameter means jisse value pass horhi.
+ 
+17) [CALL BY VALUE] => 1) in this case we are passing the value of the variable.x(a) with parametr.
+                     2) cant change the value of actual argument using formal argument.
+                     3) no pointers are used.
+                     4) its required more memory.
+                     5) it is less efficient.
+
+18) [CALL BY ADDRESS] => 1)in this case passing address of variable .x(&a).
+                       2) cant change the value of actual argument using formal argument.
+                       3) pointers are used.
+                       4) its required more memory.
+                       5) it is more effiecient.
+
+19) [CALL BY REFERNCE] =>1) its passes the address of variable.
+                         2)this actual value is modified because we change the address of the same variable.
+                         3)its requires less memory.
+                         4) it is more  efficient.
+
+20)Printf it is a inbuilt library function which is declared in studio dots header file.
+--1)The printer function is used to print any type of message and values on the console.
+--2)We use print app function with format specifier lights % d % C  %s %f.
+--3)We can also use a escapes sequence in printer function \n,\t.
+--4)\t ==> space between value when you  print .
+
+21)--1) it's kind of function it is a middle Library function which is declared in studio dot h header file
+--2)Scanner function used to take input from the user
+--3)In a scanner function must be used to format specifier like %d,%f,%c,%s.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*15) FUNCTION==>it is the block of code which takes input from the user and do some specific calculations and gives output.
 
     1)no argument and  no return value.
