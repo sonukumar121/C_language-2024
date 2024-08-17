@@ -62,3 +62,34 @@ fscanf(fp,"%d",&n);
 printf("%d",n);
 fclose(fp);
 }
+
+
+
+
+3> append mode.
+Append mode is used to append or add data to the existing data of file, if any. Hence, when you open a file in Append (a) mode,
+the cursor is positioned at the end of the present data in the file.
+
+
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+//
+int main()
+{
+	int n;
+	char str[20];
+  FILE *fp;
+  
+fp=fopen("C:\\Users\\sonu\\OneDrive\\Desktop\\titan.txt","a");//(file location,file mode)
+
+printf("enter the append statement= ");
+gets(str);
+
+//fputs(str,fp);  
+
+fprintf(fp,"%s",str);
+fclose(fp);
+}
+
