@@ -84,3 +84,39 @@ int main()
 
 
 
+
+
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+  int n,*ptr,i,a[30],p;
+  printf("enter the no.of integers= ");
+  scanf("%d",&p);//n=3
+  
+   ptr=(int*)malloc(n*sizeof(int));
+  
+  for(i=0;i<p;i++)
+  {
+  	scanf("%d",ptr+i);
+  }	
+ 
+ printf("enter the updated size= ");
+ scanf("%d",&n);
+ 
+ int *ptr1=(int*)realloc(ptr,n*sizeof(int));
+ for(i=p;i<n;i++)
+ {
+ 	scanf("%d",ptr+i);
+ }
+ 
+ for(i=0;i<n;i++)
+ {
+ 	printf("%d,",*(ptr+i));
+ }
+
+}
+
+
+
+
