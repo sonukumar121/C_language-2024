@@ -29,3 +29,36 @@ scanf("%d",&n);
 fprintf(fp,"%d",n);
 fclose(fp);	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//#include<stdio.h>
+int main()
+{
+	int n;
+  FILE *fp;
+  
+if((fp=fopen("C:\\Users\\sonu\\OneDrive\\Desktop\\rolex.txt","r"))==NULL)//(file location,file mode)
+{
+  printf("Error occured");
+  	
+}if(fp==NULL)
+{
+	printf("File not created");
+	
+}
+fscanf(fp,"%d",&n);
+printf("%d",n);
+fclose(fp);
+}
