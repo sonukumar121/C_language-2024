@@ -11,7 +11,7 @@ IMPORTANT POINTS OF REALLOC( )
 6. realloc returns void*
 7. when it increases memory, it will not lose the previous content
 8. after using realloc, you should free it.
-
+//Realloc() fn i used to chnage the size of memory block without losing the old data.
 
 
 
