@@ -7,8 +7,8 @@ File operations()
 5>copy
 
 1>fopen()-->for open new file or create.
-2>fscanf()-->for input in a file. and fgetc()-->for strings.
-3>fprintf()-->to print anything in a file.  and fputc()-->for strings.
+2>fscanf()-->for read in a file. fgetc()-->for strings.
+3>fprintf()-->for print anything in a file.  and fputc()-->for strings.
 4>fclose()-->for close file for security purpose.
 
 #include<stdio.h>
