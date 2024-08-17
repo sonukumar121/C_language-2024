@@ -1,17 +1,7 @@
 
 @abdulrahimjalloh363
 10 months ago
-IMPORTANT POINTS OF REALLOC( )
 
-1. It mean "reallocation of memory"
-2. It main purpose is to "resize" the memory after already allocated with malloc or calloc
-3. Resize means to "increase or decrease" memory
-4. You can only use realloc if you have already allocated memory using malloc or calloc, else it is impossible to use realloc
-5. it accept two arguments: (a) previous allocated pointer (b) new memory size
-6. realloc returns void*
-7. when it increases memory, it will not lose the previous content
-8. after using realloc, you should free it.
-//Realloc() fn i used to chnage the size of memory block without losing the old data.
 
 
 
@@ -79,6 +69,21 @@ int main()
   return 0;	
 }
 
+
+
+//REalloc()
+
+IMPORTANT POINTS OF REALLOC( )
+
+1. It mean "reallocation of memory"
+2. It main purpose is to "resize" the memory after already allocated with malloc or calloc
+3. Resize means to "increase or decrease" memory
+4. You can only use realloc if you have already allocated memory using malloc or calloc, else it is impossible to use realloc
+5. it accept two arguments: (a) previous allocated pointer (b) new memory size
+6. realloc returns void*
+7. when it increases memory, it will not lose the previous content
+8. after using realloc, you should free it.
+//Realloc() fn i used to chnage the size of memory block without losing the old data.
 
 
 
