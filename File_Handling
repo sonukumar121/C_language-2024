@@ -93,3 +93,24 @@ fprintf(fp,"%s",str);
 fclose(fp);
 }
 
+
+
+//4> modify in file.text
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+//
+int main()
+{
+	int n;
+	char str[20];
+  FILE *fp;
+  
+fp=fopen("C:\\Users\\sonu\\OneDrive\\Desktop\\titan.txt","r+");//(file location,file mode)
+
+fputs("sonu",fp);  
+
+
+fclose(fp);
+}
+
