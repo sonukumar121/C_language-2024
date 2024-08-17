@@ -1,15 +1,15 @@
-
-@abdulrahimjalloh363
-10 months ago
-
-
-
-
-
-
-
-
-
+1>> //dynamic memory allocation.
+malloc()-->malloc is the short name for "memory allocation" and is used dynamically allocate a single 
+large block of contiguos memory according to the  size specified.
+SYNTAX==>(void*)malloc(n*sizeof(int));
+malloc fn simply allocates a memory block according to the size specified  in the heap and on 
+success it returns a pointer pointing to the first byte of the aloocated memory else returns 
+NULL.
+Malloc stands for memory alocation.
+malloc allocates a single block of memory of specified size.
+malloc contains one arguments and size of datatype.
+malloc initilize the value with garbaze value.
+it is faster than calloc()
 
 
 
@@ -42,7 +42,20 @@ int main()
 }
 
 
+
+
+
 //using calloc();
+
+2>> //     CALLOC()
+   SYNTAX==>p=(int*)calloc(n,sizeof(int));
+   here,n stand for no.of block or we can  say for no of integers to intiliaze the block.
+calloc stands for continous memory alocation.
+calloc allocates multiple  block of memory of same size.
+calloc contains two arguments and size of datatype.
+calloc initilize the value with zero value.
+it is slower than malloc()
+
   
   int main()
 {
