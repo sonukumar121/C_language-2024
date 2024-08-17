@@ -1,1 +1,31 @@
+//File_Handling ==>is a storing data in a file and acessing data from a file called file handling
+File operations()
+1>create
+2>read
+3>write
+4>delete
+5>copy
 
+1>fopen()-->for open new file or create.
+2>fscanf()-->for input in a file. and fgetc()-->for strings.
+3>fprintf()-->to print anything in a file.  and fputc()-->for strings.
+4>fclose()-->for close file for security purpose.
+
+#include<stdio.h>
+int main()
+{
+	int n;
+  FILE *fp;
+  
+fp=fopen("C:\\Users\\sonu\\OneDrive\\Desktop\\rolex.txt","w");//(file location,file mode)
+if(fp==NULL)
+{
+	printf("File not created");
+	
+}
+printf("file created sucessfully");
+printf("enter a nnumber= ");
+scanf("%d",&n);
+fprintf(fp,"%d",n);
+fclose(fp);	
+}
