@@ -1,1 +1,9 @@
+Storage Class-->Storage Class defined the scope and life time of variables and functions.
 
+types-
+1>Auto
+2>static
+3>extern 
+4>register
+
+storage class 
