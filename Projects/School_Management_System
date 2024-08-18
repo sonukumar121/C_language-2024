@@ -1,1 +1,71 @@
+#include<stdio.h>
+//student details
+ struct student
+{
+  char name[30];
+  int rollno;
+  char coursename[30];
+  float marks_scored;	
+};
+
+int main()
+{
+	char Name[30];
+	int n,a;
+  struct student s1={"Sonu",1,"electrical",9.4};
+  struct student s2={"Rohit",2,"mechanical",9.1};
+  struct student s3={"Rahul",3,"civil",8.6};
+  struct student s4={"Raghav",4,"electrical communication",7.9};
+  struct student s5={"Monty",5,"cse",8.9};
+	int i,choice;
+	printf("Enter the student details press '1' for find by roll.no\n press '2' for find by Name= ");
+	
+	scanf("%d",&n);
+	if(n==1)
+	{
+	  scanf("%d",&rollno);	
+	  a=rollno;
+	  switch(a);
+	}
+	else if(n==2)
+	{
+		scanf("%d",&Name);
+		a=(char)Name;
+		switch(a);
+	}
+	
+
+  switch(a)
+{
+
+	if(rollno==1 || Name=="sonu")
+	{
+	  
+	  printf("student name= %s\n,student roll.no= %d\n,student course name= %s\n,student scored in 1st sem= %f SGPA\n",s1.name,s1.rollno,s1.coursename,s1.marks_scored);	
+	}
+	else if(rollno=2 || Name==Rohit )
+	{
+		  printf("student name= %s\n,student roll.no= %d\n,student course name= %s\n,student scored in 1st sem= %f SGPA\n",s2.name,s2.rollno,s2.coursename,s2.marks_scored);		
+	}
+	else if(rollno==3 || Name==Rahul)
+	{
+	   printf("student name= %s\n,student roll.no= %d\n,student course name= %s\n,student scored in 1st sem= %f SGPA\n",s3.name,s3.rollno,s3.coursename,s3.marks_scored);		
+	}
+	else if(rollno==4 || Name==Raghav)
+	{
+	 printf("student name= %s\n,student roll.no= %d\n,student course name= %s\n,student scored in 1st sem= %f SGPA\n",s4.name,s4.rollno,s4.coursename,s4.marks_scored);	
+	}
+	else
+	 printf("student name= %s\n,student roll.no= %d\n,student course name= %s\n,student scored in 1st sem= %f SGPA\n",s5.name,s5.rollno,s5.coursename,s5.marks_scored);
+	
+  
+}
+}
+  
+
+
+
+
+
+
 
