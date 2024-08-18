@@ -175,3 +175,55 @@ int main()
 	//POSITIVE SIGN -->FORWARD
 	//NEGATIVE SIGN -->BACKWARD
 }
+
+
+
+
+
+//
+#include<stdio.h>
+//ftell->for knowing the index or length of strings.
+int main()
+{
+	FILE *fp;
+	char name[30];
+	int n;
+	fp=fopen("C:\\Users\\sonu\\OneDrive\\Desktop\\titan.txt","r");
+	printf("file created sucessfully");
+	 
+    fscanf(fp,"%s",name);
+    printf("= %s\n",name);
+   
+    printf("the length of strings is= %d",ftell(fp));
+    
+   
+    
+    
+}
+
+//#include<stdio.h>
+//rewind fn ->used for to skip the iteration ..
+suppose fseek(_6,_)->rewind jenny lecture-->lecture print only after the skip of 6 iteration value.
+int main()
+{
+	FILE *fp;
+	char name[30];
+	int n;
+	fp=fopen("C:\\Users\\sonu\\OneDrive\\Desktop\\titan.txt","r");
+	printf("file created sucessfully");
+	 
+    fscanf(fp,"%s",name);
+    printf("= %s\n",name);
+   
+    printf("the length of strings is= %d",ftell(fp));
+    
+   
+    
+
+ fseek(fp,6,SEEK_SET);
+    rewind(fp);
+    fscanf(fp,"%s",name);
+    printf("%s",name);
+    
+}
+
