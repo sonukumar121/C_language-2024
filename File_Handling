@@ -114,3 +114,47 @@ fputs("sonu",fp);
 fclose(fp);
 }
 
+
+
+
+
+
+
+
+//#include<stdio.h>
+//file handling in w+ mode.
+//w+==>overwrite any thing.
+int main()
+{
+   FILE *fp=NULL;
+   char str[20];
+   int n;
+   fp=fopen("C:\\Users\\sonu\\OneDrive\\Desktop\\rolex.txt","w+");
+   printf("file created sucessfully");
+   //printf("enter any numbers= ");
+   //scanf("%d",&n);
+   fprintf(fp,"%d",3);
+   fclose(fp);
+   
+}
+
+// r+==>used for modification in already content which are exit in file.
+#include<stdio.h>
+//file handling in w+ mode.
+//w+==>overwrite any thing.
+int main()
+{
+   FILE *fp=NULL;
+   char str[20];
+   int n;
+   fp=fopen("C:\\Users\\sonu\\OneDrive\\Desktop\\rolex.txt","w+");
+   printf("file created sucessfully");
+   //printf("enter any numbers= ");
+   //scanf("%d",&n);
+   fputs("sonu",fp)
+   fputs("now",fp);
+   fclose(fp);
+   
+}
+
+
