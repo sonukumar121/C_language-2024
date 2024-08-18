@@ -227,3 +227,33 @@ int main()
     
 }
 
+
+
+
+
+
+//#include<stdio.h>
+int main()
+{
+  FILE *fp=NULL;
+  int count=1;
+  char ch;
+  char name[30];
+  fp=fopen("C:\\Users\\sonu\\OneDrive\\Desktop\\titan.txt","w");
+  if(fp==NULL)
+  {
+  	printf("error");
+  }	
+  
+  while((ch=fgetc(fp)!=EOF))
+  {
+  	if(ch=='\n')
+  	{
+  	  count++;	
+    }
+    fclose(fp);
+    printf("%d",count);
+  }
+  
+  
+}
