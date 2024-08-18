@@ -158,3 +158,20 @@ int main()
 }
 
 
+
+
+//#include<stdio.h>
+int main()
+{
+	FILE *fp;
+	char ch;
+	int n;
+	fp=fopen("C:\\Users\\sonu\\OneDrive\\Desktop\\rolex.txt","r");
+	fseek(fp,3,SEEK_SET);//FROM BEGINNING POSITIONS.
+	//fseek(fp,-2,SEEK_CUR);// FROM CURRENT POSITIONS.
+	//fseek(fp,-5,SEEK_END);//FROM END POSITIONS
+	ch=fgetc(fp);
+	printf("%c",ch);
+	//POSITIVE SIGN -->FORWARD
+	//NEGATIVE SIGN -->BACKWARD
+}
