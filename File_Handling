@@ -257,3 +257,30 @@ int main()
   
   
 }
+
+
+
+#include<stdio.h>
+int main()
+{ 
+  FILE *fptr1=NULL,*fptr2=NULL;
+  char c;
+  fptr1=fopen("C:\\Users\\sonu\\OneDrive\\Desktop\\titan.txt","r");
+  if(fptr1=NULL)
+  {
+  	printf("no file");
+  }
+  fptr2=fopen("C:\\Users\\sonu\\OneDrive\\Desktop\\rolex.txt","r");
+  if(fptr2=NULL)
+  {
+  	printf("no file");
+  }
+  while((c=fgetc(fptr1))!=EOF)
+  {
+  	fputc(c,fptr2);
+  }
+  fclose(fptr1);
+  fclose(fptr2);
+  printf("sucessfully copied");
+  	
+}
