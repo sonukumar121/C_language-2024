@@ -1,1 +1,15 @@
+//struct str-->user_defined_datatype.
+struct str 
+{
+   int a;
+   char b;
+   float c;
+}
+int main()
+{
+struct str s;
+printf("%d,%c,%f",s.int,s.char,s.float);
+
+}
+
 
