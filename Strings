@@ -267,19 +267,30 @@ int main()
 	
 }
 
-
-//#include<stdio.h>
+#include<stdio.h>
+#include<String.h>
 //check how many vowels or const in given strings.
 int main()
 {
   char str[30];
+  int c=0,i=0,x,f;
+  int e;
   char vowels[10]={'a','e','i','o','u','A','E','I','O','U'};
   printf("enter the strings= ");
-  gets(str);//RAGHAV
-  if(str[i]==vowels[i])
-  {
-  	
-  }
+  gets(str);//RAGHAV while(str[])
+  e=printf("value of e= %d",strlen(str));//e=4
   
-  	
+  for(x=0;x<5;x++)
+  {
+      for(i=0;i<10;i++)
+  {
+  	  if(str[x]==vowels[i])
+  	  {
+  	    c=c+1;	
+      }
+  }
+}
+printf("no. of vowel is= %d",c);
+f=e-c;
+printf("\n no. of consunant is= %d",f);
 }
