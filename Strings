@@ -294,3 +294,36 @@ printf("no. of vowel is= %d",c);
 f=e-c;
 printf("\n no. of consunant is= %d",f);
 }
+
+
+
+
+
+
+//#include<stdio.h>
+int main()
+//sorting-->
+{
+	int i,c;
+	char x;
+	char str[20];
+  printf("enter the strings= ");
+  gets(str);//sonu-->nosu
+  
+  for(x=0;x<4;x++)
+  {
+  	for(i=x+1;i<4;i++)
+  	{
+  	  if(str[x]>str[i])//osnu->nsou->
+		{
+		 c=str[i];
+		 str[i]=str[x];
+		 str[x]=c;	
+		}	
+    }
+  }
+  for(i=0;i<5;i++)
+  {
+  	printf("%c",str[i]);
+  }
+}
