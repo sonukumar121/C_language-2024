@@ -266,3 +266,20 @@ int main()
 	
 	
 }
+
+
+//#include<stdio.h>
+//check how many vowels or const in given strings.
+int main()
+{
+  char str[30];
+  char vowels[10]={'a','e','i','o','u','A','E','I','O','U'};
+  printf("enter the strings= ");
+  gets(str);//RAGHAV
+  if(str[i]==vowels[i])
+  {
+  	
+  }
+  
+  	
+}
