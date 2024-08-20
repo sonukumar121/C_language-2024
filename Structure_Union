@@ -76,3 +76,25 @@ int main()
 	scanf("%s",&*ptr->name);
 	printf("%s",ptr->name);
 }
+
+
+
+
+
+
+//#include<stdio.h>
+///in union share of memory in which have more memory so after this sharing .
+
+union stu
+{
+	int a;
+	int b;
+	
+};
+int main()
+{
+	union stu s;
+	s.a=65;
+	printf("%d",s.b);//same memory share -->output =65
+	
+}
