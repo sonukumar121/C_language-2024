@@ -31,7 +31,11 @@ int main()
 
 
 
-//#include<stdio.h>
+
+
+
+//Selection_Sorting..
+#include<stdio.h>
 int a[5];
 int min=a[1];
 int main()
@@ -65,7 +69,8 @@ int main()
 	{
 		printf("%d, ",a[i]);
 	}
-}
+
+} //Incomplete
 
 
 
