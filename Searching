@@ -1,0 +1,74 @@
+
+
+// LINEAR SERCHING==>SIMPLE METHODS.
+#include<stdio.h>
+// linear searching.
+int main()
+{
+    int a[20],i,j,x,n;
+    printf("enter the elements= ");
+    for(i=0;i<5;i++)
+    {
+       scanf("%d",&a[i]);  
+    }
+    printf("enter the searching elemnts= ");
+    scanf("%d",&x);
+   
+   for(i=0;i<5;i++)
+   {
+       if(a[i]==x)
+       {
+           printf("elements is found");
+           break;
+       }
+       if(i==4)
+       {
+           printf("elemets is not found");
+       }
+       
+   }
+ 
+   
+}
+
+
+
+#BINARY SEARCHING.
+
+#include<stdio.h>
+int main()
+{
+    int a[20],i,j,x,n,low=0,high=4,mid;
+    printf("enter the elements= ");
+    for(i=0;i<5;i++)
+    {
+     scanf("%d",&a[i]);   
+    }
+    
+    printf("enter the searching elements= ");
+    scanf("%d",&x);
+    
+    
+    for(i=0;i<5;i++)
+    {
+      mid=(low+high)/2;  
+    
+    if(x==a[mid])
+    
+    {
+        printf("elements is found");
+        break;
+    }
+    
+    else if(x>a[mid]);
+    {
+        low=a[mid]+1;
+    }
+
+    high=mid-1;
+}
+if(i==5)
+{
+    printf("elements is not present");
+}
+}
