@@ -112,6 +112,43 @@ int main()
 
 
 
+//#include<stdio.h>
+int mergesort(int [],int,int);
+int main()
+{
+  	int a[8],i,j;
+  	printf("enter the elements= ");
+  	for(i=0;i<8;i++)
+  	{
+  	   scanf("%d",&a[i]);	
+    }
+    mergesort(a,0,1);
+    for(i=0;i<8;i++)
+    {
+    	
+    	printf("%d,",a[i]);
+	}
+}
+int mergesort(int a[],int i,int j)
+{
+	int c;
+
+
+		
+	
+	if(a[i]>a[j])
+	{
+		c=a[j];
+		a[j]=a[i];
+		a[i]=c;
+		
+	}
+	i=i+2;
+	j=j+2;
+	return (a,i,j);
+
+}  //INCOMPLETE
+
 
 
 
