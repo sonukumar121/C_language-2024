@@ -70,7 +70,45 @@ int main()
 		printf("%d, ",a[i]);
 	}
 
-} //Incomplete
+} //
+
+
+
+//#include<stdio.h>
+//bubble sorting
+
+int main()
+{
+  int a[5], i, j, k, x, n,c;
+  printf ("enter the elements= ");
+  for (i = 0; i < 5; i++)
+	{
+	  scanf ("%d", &a[i]);
+	}
+	printf("after calculations ");
+  for (i = 0; i < 5; i++)
+	{
+	  for (j =0 ; j < 5; j++)
+		{
+		  if (a[j] > a[j+1])
+			{
+			  c = a[j+1];
+			  a[j+1] = a[j];
+			  a[j] = c;
+			}
+
+		}
+	
+		
+	}
+  for (j = 0; j < 5; j++)
+  {
+  	printf("%d",a[j]);
+  }
+       	
+
+	}
+
 
 
 
