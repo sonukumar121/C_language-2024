@@ -9,6 +9,9 @@ Malloc stands for memory alocation.
 malloc allocates a single block of memory of specified size.
 malloc contains one arguments and size of datatype.
 malloc initilize the value with garbaze value.
+***->malloc returns a void pointer to the allocated space, or NULL if there's insufficient memory available.
+and here pointer represent space why because pointer have ability to hold the adreesss of the another variable.
+but here which have void means nothing but if you type cast then memory will  be accoding to user datatype will be aloocated
 it is faster than calloc()
 
 
