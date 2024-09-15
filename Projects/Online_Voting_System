@@ -27,7 +27,7 @@ int main()
 
 void vote(char s[],int age)
 {
-    int choice,x,start,vot=0;
+    int choice,x,start,vot1=0,vot2=0,vot3=0,vot4=0,vot5=0,vot6=0;
     
     printf("Lets start the Process");
     while(1)
@@ -39,9 +39,55 @@ void vote(char s[],int age)
     scanf("%d",&choice);
     switch(choice)
     {
-        case 1:if(vot>=1)
+        case 1:
         {
-            printf("\nSorry! you are already voted CONGRESS parties");
+               if(vot1>=1)
+              {
+        
+                        printf("\nSorry! you are already voted CONGRESS parties");
+                        printf("\nEnter 0 for exit\nEnter 1 for following another person to vote:");
+                       scanf("%d",&x);
+             
+                  if(x==1)
+                {
+                     
+                    goto start;
+                }
+                else if(x==0)
+                {
+                    exit(1);
+                }
+        
+              else
+                goto start;
+              }
+            
+        
+                printf("\nALL process is completed! here is your recipt.");
+                printf("\nrecipt\n");
+                printf("\nNAME:%s",s);
+                printf("\nAGE:%d",age);
+                printf("\nVote:CONGRESS");
+                printf("\nThanks For Visiting:");
+                printf("\nEnter 0 for exit\nEnter 1 for following another person to vote:");
+                scanf("%d",&x);
+               
+                 if(x==1)
+                {
+                     vot1=vot1+1;
+                    goto start;
+                }
+                else if(x==0)
+                {
+                    exit(1);
+               }
+        }     
+                case 2:
+        {
+                if(vot2>=1)
+                {
+                
+                 printf("\nSorry! you are already voted CONGRESS parties");
              printf("\nEnter 0 for exit\nEnter 1 for following another person to vote:");
              scanf("%d",&x);
              
@@ -57,19 +103,20 @@ void vote(char s[],int age)
               
              
               goto start;
-        }
+                }
+        
                 printf("\nALL process is completed! here is your recipt.");
                 printf("\nrecipt\n");
                 printf("\nNAME:%s",s);
                 printf("\nAGE:%d",age);
-                printf("\nVote:CONGRESS");
+                printf("\nVote:BJP");
                 printf("\nThanks For Visiting:");
                 printf("\nEnter 0 for exit\nEnter 1 for following another person to vote:");
                 scanf("%d",&x);
                
                  if(x==1)
                 {
-                     vot=vot+1;
+                     vot2=vot2+1;
                     goto start;
                 }
                 else if(x==0)
@@ -77,30 +124,31 @@ void vote(char s[],int age)
                     exit(1);
                 }
                 
-                case 2: if(vot>=1)
-                {
-                printf("ALL process is completed! here is your recipt.");
-                printf("\nrecipt\n");
-                printf("\nNAME:%s",s);
-                printf("\nAGE:%d",age);
-                printf("Vote:BJP");
-                printf("\nThanks For Visiting:");
-                printf("\nEnter 0 for exit\nEnter 1 for following another person to vote:");
-                scanf("%d",&x);
+        }       
+                case 3:
+     {
+                    if(vot3>=1)
+                    {
+                
+                  printf("\nSorry! you are already voted CONGRESS parties");
+             printf("\nEnter 0 for exit\nEnter 1 for following another person to vote:");
+             scanf("%d",&x);
+             
                   if(x==1)
                 {
-                    vot=vot+1;
+                     
                     goto start;
                 }
                 else if(x==0)
                 {
                     exit(1);
                 }
-                }
-                
-                case 3:if(vot>=1)
-                {
-                printf("ALL process is completed! here is your recipt.");
+              
+             
+              goto start;
+                    }
+        
+                printf("\nALL process is completed! here is your recipt.");
                 printf("\nrecipt\n");
                 printf("\nNAME:%s",s);
                 printf("\nAGE:%d",age);
@@ -108,20 +156,40 @@ void vote(char s[],int age)
                 printf("\nThanks For Visiting:");
                 printf("\nEnter 0 for exit\nEnter 1 for following another person to vote:");
                 scanf("%d",&x);
-                  if(x==1)
+               
+                 if(x==1)
                 {
-                    vot=vot+1;
+                     vot3=vot3+1;
                     goto start;
                 }
                 else if(x==0)
                 {
                     exit(1);
                 }
-                }
                 
-                case 4: if(vot>=1)
+       }         case 4:
+       
+       {
+                if(vot4>=1)
                 {
-                printf("ALL process is completed! here is your recipt.");
+                 printf("\nSorry! you are already voted CONGRESS parties");
+             printf("\nEnter 0 for exit\nEnter 1 for following another person to vote:");
+             scanf("%d",&x);
+             
+                  if(x==1)
+                {
+                     
+                    goto start;
+                }
+                else if(x==0)
+                {
+                    exit(1);
+                }
+              
+             
+              goto start;
+                }
+                printf("\nALL process is completed! here is your recipt.");
                 printf("\nrecipt\n");
                 printf("\nNAME:%s",s);
                 printf("\nAGE:%d",age);
@@ -130,20 +198,41 @@ void vote(char s[],int age)
                 printf("\nEnter 0 for exit\nEnter 1 for following another person to vote:");
                 scanf("%d",&x);
                
-                if(x==1)
+                 if(x==1)
                 {
-                    vot=vot+1;
+                     vot4=vot4+1;
                     goto start;
                 }
                 else if(x==0)
                 {
                     exit(1);
                 }
-                }
                 
-                case 5: if(vot>=1)
+       }           
+                case 5:
+           {     
+                
+                if(vot5>=1)
                 {
-                printf("ALL process is completed! here is your recipt.");
+                 printf("\nSorry! you are already voted CONGRESS parties");
+             printf("\nEnter 0 for exit\nEnter 1 for following another person to vote:");
+             scanf("%d",&x);
+             
+                  if(x==1)
+                {
+                     
+                    goto start;
+                }
+                else if(x==0)
+                {
+                    exit(1);
+                }
+              
+             
+              goto start;
+                }
+        
+                printf("\nALL process is completed! here is your recipt.");
                 printf("\nrecipt\n");
                 printf("\nNAME:%s",s);
                 printf("\nAGE:%d",age);
@@ -151,21 +240,41 @@ void vote(char s[],int age)
                 printf("\nThanks For Visiting:");
                 printf("\nEnter 0 for exit\nEnter 1 for following another person to vote:");
                 scanf("%d",&x);
-                 
-                  if(x==1)
+               
+                 if(x==1)
                 {
-                    vot=vot+1;
-                   goto start;
+                     vot5=vot5+1;
+                    goto start;
                 }
                 else if(x==0)
                 {
                     exit(1);
                 }
-                }
                 
-                case 6: if(vot>=1)
+           }            
+                 case 6:
+            {     
+                 if(vot6>=1)
+                 {
+                  printf("\nSorry! you are already voted CONGRESS parties");
+             printf("\nEnter 0 for exit\nEnter 1 for following another person to vote:");
+             scanf("%d",&x);
+             
+                  if(x==1)
                 {
-                printf("ALL process is completed! here is your recipt.");
+                     
+                    goto start;
+                }
+                else if(x==0)
+                {
+                    exit(1);
+                }
+              
+             
+              goto start;
+                 }
+        
+                printf("\nALL process is completed! here is your recipt.");
                 printf("\nrecipt\n");
                 printf("\nNAME:%s",s);
                 printf("\nAGE:%d",age);
@@ -173,21 +282,25 @@ void vote(char s[],int age)
                 printf("\nThanks For Visiting:");
                 printf("\nEnter 0 for exit\nEnter 1 for following another person to vote:");
                 scanf("%d",&x);
-                scanf("%d",&x);
-                if(x==1)
+               
+                 if(x==1)
                 {
-                    vot=vot+1;
-                 goto start;
+                     vot6=vot6+1;
+                    goto start;
                 }
                 else if(x==0)
                 {
                     exit(1);
                 }
-                }
+            }
+                
                 
                  
                  default:printf("\nInvalid choice! Try again");
     }
+
+}
+return 0;
+}
     
-}
-}
+
