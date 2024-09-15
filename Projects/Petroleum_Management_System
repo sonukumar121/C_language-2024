@@ -5,6 +5,7 @@ int main()
 {
     int ch,ch2,lit,oil=1500,oilp=65,rupess,litm,i,choice,rupe,nrate,nstoreo,earning=0;
 	printf("_______________*WELCOME TO OUR FUEL STATION PROGRAM*_____________");
+	start:
 	while(1)
 	{
     printf("\n1>Choose oil        2>Rupees       3>Main       4>Exit");
@@ -57,7 +58,7 @@ int main()
   {      while(1)
                 {
                     printf("__________*MAIN SERVICE SETTINGS*_______ ");
-                    printf("1>Rate     2>Total litres   3>Remaining litres    4>Earning");
+                    printf("1>Rate     2>Total litres   3>Remaining litres    4>Earning   5>Exit");
                     scanf("%d",&ch2);
                     if(ch2==1)
                     {
@@ -78,13 +79,20 @@ int main()
                     
                     }
                     
-                   else if(ch==3)
+                   else if(ch2==3)
                    {
                        printf("\nRemaing litres of oil=%d",oil);
                    }
-                   else if(ch==4)
+                   
+                   
+                   else if(ch2==4)
                    {
-                       printf("%d",earning);
+                       printf("\nyour total earning is= %d",earning);
+                   }
+                   
+                   else if(ch2==5)
+                   {
+                      goto start;
                    }
                     
                        
