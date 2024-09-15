@@ -53,7 +53,8 @@ int main()
         }         
          
          case 3:
-                while(1)
+         
+  {      while(1)
                 {
                     printf("__________*MAIN SERVICE SETTINGS*_______ ");
                     printf("1>Rate     2>Total litres   3>Remaining litres    4>Earning");
@@ -86,18 +87,23 @@ int main()
                        printf("%d",earning);
                    }
                     
+                       
                         
-                        
-                 }
+         }
+            
+            
+    }      
+ 
             case 4: exit(1);
-             
              default:printf("Invalid! Choice and Try again");
-        } 
+    }       
         
-	}
+
+	
+
+	} 
 	return 0;
 }
-                
                 
                  
  
