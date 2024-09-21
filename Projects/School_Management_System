@@ -192,6 +192,19 @@ void findstudent()
    }
    
 }
+void studentcount()
+{
+    int c=0;
+    struct node *tmp,*tmp1;
+    tmp1=start;
+    while(tmp1->next!=NULL)
+    {
+       c=c+1; 
+       tmp1=tmp1->next;
+    }
+    c=c+1;
+    printf("No.of students= %d",c);
+}
 
  int main()
  
@@ -219,6 +232,9 @@ void findstudent()
   	break;
   	
   	case 5:findstudent();
+  	break;
+  	
+  	case 6:studentcount();
   	break;
   	
   	
