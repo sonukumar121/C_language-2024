@@ -1,53 +1,92 @@
-#include<stdio.h>
-#include<stdlib.h>
-
-int main()
+ #include<stdio.h>
+ #include<stdlib.h>
+ struct node
+ {
+ 	char name[20];
+ 	int seat;
+ 	char source[20];
+ 	char destination[20];
+ 	struct node *next;
+ }*start=NULL;
+ 
+ 
+ void book()
+ {
+   struct node *tmp,*tmp1;
+   tmp=(struct node*)malloc(sizeof(struct node));
+   tmp->next=NULL;
+   tmp1=start;
+   printf("\nEnter the name= ");
+   scanf("%s",&tmp->name);
+   printf("\nEnter the seat.no= ");
+   scanf("%d",&tmp->seat);
+   printf("\nEnter the source= ");
+   scanf("%s",&tmp->source);
+   printf("\nEnter your destination= ");
+   scanf("%s",&tmp->destination);
+   if(start==NULL)
+   {
+   	start=tmp;
+   }
+   else
+   {
+   
+   tmp1=start;
+while(tmp1->next!=NULL)
 {
-    int n;
-	float time=8.30;
-    char seat[300];
-	char source[300];
-	char destination[300];
-	char name[300];
-  printf("____________*WELCOME TO KOTLIN TRAVELERS*__________");
-  printf("\nEnter your name: ");
-  scanf("%s",&name);
-  printf("\nEnter the seat number:");
-  scanf("%d",&seat);
-  printf("\nEnter Source: ");
-  scanf("%s",&source);
-  printf("\nEnter Destination: ");
-  scanf("%s",&destination);
-  printf("\nSeat booked Sucessfully");
-  while(1)
-  {
-  printf("\nKotlin Bus Booking Systems:\n1.Book a Seat\n2.View Reseravtions\n3.Edit a Reservation\n4.Print a ticket\n5.Exit");
-  printf("\nEnter your Choice: ");
-  scanf("%d",&n);
-  switch(n)
-  {
-      case 1: printf("\nEnter Name: ");
-              scanf("%s",&name);
-              printf("\nEnter Seat Number: ");
-              scanf("%d",&seat);
-              printf("\nEnter Source: ");
-              scanf("%s",&source);
-              printf("\nEnter Destination: ");
-              scanf("%s",&destination);
-              printf("\nSeat booked Sucessfully");
-              break;
-              
-      case 2:printf("\nAll Reservations: ");
-             printf("\nSeat No.      Name        Source           Destination         Time");
-             printf("\n--------------------------------------------------------------------------------------");
-             printf("\n1              %s           %s           %s         %f",             name     ,     source    ,     destination     ,    time);
-             break;
-  }
-  
-  
-  
-  
-  
-  
-  }
+	tmp1=tmp1->next;
+	
 }
+tmp1->next=tmp;
+tmp1=tmp;
+}
+
+   	
+ }
+ void view()
+ {
+ 	struct node *tmp,*tmp1;
+  tmp1=start;
+  
+  while(tmp1->next!=NULL)
+  {
+  	
+             printf("\n              Name        Seat.no      Source     Destination");
+             printf("\n--------------------------------------------------------------------------------------");
+             printf("\n1              %s           %d           %s         %s",             tmp1->name     ,     tmp1->seat    ,     tmp1->source    ,   tmp1->destination);
+             tmp1=tmp1->next;
+     
+  }
+            printf("\n              Name         Seat.no      Source     Destination");
+             printf("\n--------------------------------------------------------------------------------------");
+             printf("\n              %s           %d           %s         %s",             tmp1->name     ,     tmp1->seat   ,     tmp1->source     ,    tmp1->destination);
+    
+
+ }
+ int main()
+ 
+ {
+ 	int choice;
+ while(1)
+ {
+ 
+ printf("\n____________*WELCOME TO KOTLIN TRAVELERS*__________");
+  printf("\nKotlin Bus Booking Systems:\n1.Book a Seat\n2.View Reseravtions\n3.Edit a Reservation\n5.Exit");
+  printf("\nEnter the choice= ");
+  scanf("%d",&choice);
+  switch(choice)
+  {
+  	case 1:book();
+  	break;
+  	
+  	case 2:view();
+  	break;
+  	
+  	
+  }
+ }
+ return 0;
+ }
+ 
+ 
+ 
