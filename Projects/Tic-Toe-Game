@@ -1,46 +1,112 @@
-
 #include <stdio.h>
+struct node
+{
+    int a[3][3];
+    
+}*start=a[1][1];
+
+
+void Inserte()
+{
+     struct node *tmp,*tmp1;
+     
+    tmp1=start;
+    printf("\nEnter the elements in 3*3 matrix= ");
+     for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+          scanf("%d",&tmp1->a[i][j]);  
+        }
+        
+        
+    }
+}
+
+void startgame()
+{
+    int r,c;
+    int choice=1;
+    char s='*';
+    struct node *tmp,*tmp1,*tmp2,*tmp3;
+     
+    tmp1=start;
+    
+     for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+          printf("%d\t",&tmp1->a[i][j]);  
+        }
+        printf("\n");
+        
+        
+    }
+    while(choice)
+    {
+    printf("\nEnter the value of Row and column= ");
+    scanf("%d %d",&r,&c);
+    while(*tmp1!=a[r][c])
+    {
+        tmp1=tmp1++;
+    }
+    tmp1->a[r][c]=(char) s;
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+          printf("%d\t",&tmp1->a[i][j]);  
+        }
+        printf("\n");
+        
+        
+    }
+    tmp1=start;
+    tmp2=tmp1++;
+    tmp3=tmp2++;
+     for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+         if(*tmp1==a[i][j] && *tmp2==a[i][j+1] && tmp3==a[i][j+2])
+         {
+            printf("\nYou Won"); 
+         }
+         tmp1=tmp1+12;
+         tmp2=tmp2+12;
+         tmp3=tmp3+12;
+         else if()
+        }
+    
+    }
+    
+    
+}
+
 
 int main()
 {
-    int a[3][3],i,j,c=0;
-    printf("\nInsert elements in 3*3 matrix= ");
-    for(i=0;i<3;i++)
+    printf("\n---------------*Welcome to Tic-Toe Games*----------------");
+    while(1)
     {
-        for(j=0;j<3;j++)
-        {
-          scanf("%d",&a[i][j]);  
-        }
         
+    
+    printf("\n1>Insert elements in 3*3 matrix\n2>Start Games\n3>Exit the Games\n");
+    printf("\nEnter the choice= ");
+    switch(choice)
+    {
+        case 1:Inserte();
+        break;
         
+        case 2:startgame();
+        break;
+        
+        case 3:Exitgame();
+        exit(1);
     }
     
-    for(i=0;i<3;i++)
-    {
-        for(j=0;j<3;j++)
-        {
-            
-            	
-            	//printf("\n            |          |   \n        ----|----------|----\n            |\n            |\n            |\n            |\n        ----|---------|----\n            |\n            |\n            |\n        ");
-            	//printf("          |         |");
-            	 printf("\t%d",a[i][j]);
-            	 
-          
-          
-         
-        }
-        if(c>=0)
-          {
-            printf("\n----------|---------|------------"); 
-            c=c+1;
-          }
-          
-        printf("\n");
-        
-    }
-            printf("          |         |");
+   
     
+   
+   }
 
-
-	return 0;
-}
