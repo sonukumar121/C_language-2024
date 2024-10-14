@@ -33,42 +33,37 @@ int main()
 
 
 
-#BINARY SEARCHING.
-
 #include<stdio.h>
 int main()
 {
-    int a[20],i,j,x,n,low=0,high=4,mid;
-    printf("enter the elements= ");
-    for(i=0;i<5;i++)
-    {
-     scanf("%d",&a[i]);   
-    }
-    
-    printf("enter the searching elements= ");
-    scanf("%d",&x);
-    
-    
-    for(i=0;i<5;i++)
-    {
-      mid=(low+high)/2;  
-    
-    if(x==a[mid])
-    
-    {
-        printf("elements is found");
-        break;
-    }
-    
-    else if(x>a[mid]);
-    {
-        low=a[mid]+1;
-    }
-
-    high=mid-1;
-}
-if(i==5)
-{
-    printf("elements is not present");
-}
+   int mid,n,low=0,search,i;
+   printf("\nEnter the no.of elemnts: ");
+   scanf("%d",&n);
+   int a[n];
+   for(i=0;i<n;i++)
+   {
+    scanf("%d",&a[i]);   
+   }
+   printf("\nEnter the searching elements: ");
+   scanf("%d",&search);
+   int high=n-1;
+  
+   while(low<=high)
+   {
+   	 mid=(high + low)/2;
+       if(search==a[mid])
+       {
+           printf("\nElements is found: ");
+           break;
+       }
+       else if(search<a[mid])
+       {
+           high=mid-1;
+       }
+       else
+       {
+          low=mid+1;
+       }
+   }
+   
 }
